@@ -12,8 +12,8 @@ class Landing extends Component {
                 src={avatar}
                 alt="avatar"
                 className="avatar-img"
-
               />
+            </Cell>
             <div className="banner-text">
               <h1>I'm Jullia Tran</h1>
             <hr/>
@@ -34,7 +34,7 @@ class Landing extends Component {
             </a>
           </div>
             </div>
-          </Cell>
+          
         </Grid>
       </div>
     );
