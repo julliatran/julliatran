@@ -7,20 +7,22 @@ function App() {
   return (
     <div className="demo-big-content" style ={{width: '100%', margin:'auto'}}>
     <Layout>
-      <Header className="header-color" title={<Link to="/">Title</Link>} scroll>
-        <Navigation>
-          <Link to="/projects">Projects</Link>
-          <Link to="/aboutme">About Me</Link>
-          <Link to="/resume">Resume</Link>
-          <Link to="/contact">Contact</Link>
+      <Header transparent className="header-color" title={<Link to="">Title</Link>} scroll>
+        <Navigation >
+          <Link to="/projects" ><strong>PROJECTS</strong></Link>
+          <Link to="/aboutme"><strong>ABOUT ME</strong></Link>
+          <Link to="/resume"><strong>RESUME</strong></Link>
+          <Link to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
+          <Link to="/contact"><strong>CONTACT</strong></Link>
         </Navigation>
       </Header>
       <Drawer title="Title">
         <Navigation>
-          <Link to="/projects">Projects</Link>
-          <Link to="/aboutme">About Me</Link>
-          <Link to="/resume">Resume</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/projects"><strong>PROJECTS</strong></Link>
+          <Link to="/aboutme"><strong>ABOUT ME</strong></Link>
+          <Link to="/resume"><strong>RESUME</strong></Link>
+          <Link to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
+          <Link to="/contact"><strong>CONTACT</strong></Link>
         </Navigation>
       </Drawer>
       <Content>
