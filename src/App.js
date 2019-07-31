@@ -10,19 +10,17 @@ function App() {
       <Header transparent className="header-color" title={<Link to="">Title</Link>} scroll>
         <Navigation >
           <Link to="/projects" ><strong>PROJECTS</strong></Link>
-          <Link to="/aboutme"><strong>ABOUT ME</strong></Link>
+          <Link to="/aboutme"><strong>ABOUT</strong></Link>
           <Link to="/resume"><strong>RESUME</strong></Link>
           <Link to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
-          <Link to="/contact"><strong>CONTACT</strong></Link>
         </Navigation>
       </Header>
       <Drawer title="Title">
         <Navigation>
           <Link to="/projects"><strong>PROJECTS</strong></Link>
-          <Link to="/aboutme"><strong>ABOUT ME</strong></Link>
+          <Link to="/aboutme"><strong>ABOUT</strong></Link>
           <Link to="/resume"><strong>RESUME</strong></Link>
           <Link to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
-          <Link to="/contact"><strong>CONTACT</strong></Link>
         </Navigation>
       </Drawer>
       <Content>
