@@ -86,8 +86,8 @@
 .category-tabs {
   color: black;
   font-size: 5em;
-  margin: auto;
-  padding-left: 0.5em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
 }
 .category-tabs h1 {
   color: black;
@@ -97,7 +97,9 @@
 .project-grid {
   display: flex;
 }
-
+.project-grid Card {
+  background: black;
+}
 .project-grid h1 {
   font-size: 2em;
 }
@@ -122,9 +124,6 @@
   border: 2px solid teal;
   margin-bottom: 20px;
 }
-.contact-grid h2 {
-  font-family: 'Oswald'
-}
 
 /* Resume Page */
 .resume-right-col {
@@ -133,4 +132,9 @@
   color: white;
   padding: 2em;
 
+}
+
+{/* AngelHack */}
+.ah h1{
+  color: #447374 ;
 }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
-import AH from '../img/angelHack.png'
-
+import RB from '../img/rubikspaint.png';
+import cnn from '../img/cnn.png';
+import spaceY from '../img/spaceY.png';
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -9,7 +10,6 @@ class Project extends Component {
   }
 
   toggleCategories() {
-    const img = {'image': AH}
     /* COMPETITIONS */
     if(this.state.activeTab === 0) {
       return (
@@ -27,19 +27,17 @@ class Project extends Component {
                 </CardText>
                 <CardActions border>
                   <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/AngelHack2019" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple href="/angelHack">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
-            
           </Cell>
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(require("../angelHack.jpg")) center / cover'}} ></CardTitle>
+                <img src={RB} height='200px'/>
                 <CardText>
                 <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
                   <p>
@@ -48,10 +46,9 @@ class Project extends Component {
                 </CardText>
                 <CardActions border>
                   <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple >Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -65,7 +62,7 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>VGG16 AutoEncoder</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -75,7 +72,6 @@ class Project extends Component {
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -84,7 +80,7 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <img src={cnn} height='200px'/>
                 <CardText>
                   <h1><strong>CNN AutoEncoder</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -94,7 +90,6 @@ class Project extends Component {
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -108,7 +103,7 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <img src={RB} height='200px'/>
                 <CardText>
                 <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
                   <p>
@@ -120,7 +115,6 @@ class Project extends Component {
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -129,7 +123,7 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>Webscraper</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -139,7 +133,6 @@ class Project extends Component {
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -152,8 +145,8 @@ class Project extends Component {
         <Grid>
           <Cell col={12}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '600px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+                <img src={spaceY} height='200px'/>
                 <CardText>
                   <h1><strong>SpaceY</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -163,7 +156,6 @@ class Project extends Component {
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                  <IconButton ripple name="share" />
                 </CardMenu>
               </Card>
             </div>
@@ -176,7 +168,7 @@ class Project extends Component {
   render() {
     return (
       <div className="category-tabs">
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Competitions</Tab>
           <Tab>Machine Learning</Tab>
           <Tab>Python</Tab>
