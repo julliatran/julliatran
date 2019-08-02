@@ -20,10 +20,13 @@ class Project extends Component {
                 <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>AngelHack Vietnam 2019</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                  <p>
+                    <li>Finalist/Second place in the FE Credit Challenge</li>
+                    <li>Created a software customer service solution</li>
+                  </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/AngelHack2019" rel="noopener noreferrer" target='blank'>GitHub</Button>
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
@@ -36,13 +39,15 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px', background: 'url(require("../angelHack.jpg")) center / cover'}} ></CardTitle>
                 <CardText>
-                <h1><strong>Hack 112</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
+                  <p>
+                    <li>One of 10 projects that got showcased out of around 500 projects</li>
+                  </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
@@ -53,7 +58,7 @@ class Project extends Component {
           </Cell>
         </Grid>
       )  
-    } /* MACHINE LEARNING */
+    } // MACHINE LEARNING
     else if(this.state.activeTab === 1) {
       return (
         <Grid>
@@ -96,7 +101,7 @@ class Project extends Component {
           </Cell>
         </Grid>
       )
-    } /* PYTHON - RubiksPaint, Webscraper */
+    } // PYTHON - RubiksPaint, Webscraper 
     else if(this.state.activeTab === 2) {
       return (
         <Grid>
@@ -105,11 +110,13 @@ class Project extends Component {
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
                 <CardText>
-                  <h1><strong>RubiksPaint</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
+                  <p>
+                    <li>One of 10 projects that got showcased out of around 500 projects</li>
+                  </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
                   <Button colored ripple>Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
@@ -117,8 +124,8 @@ class Project extends Component {
                 </CardMenu>
               </Card>
             </div>
-            
           </Cell>
+          
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
@@ -139,7 +146,7 @@ class Project extends Component {
           </Cell>
         </Grid>
       )
-    } /* HARDWARE */
+    } // Hardware
     else if(this.state.activeTab === 3) {
       return (
         <Grid>
