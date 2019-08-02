@@ -24,23 +24,58 @@ class AngelHack extends Component {
                improve customer's interractions with digital channels (Facebook, FE Website,...) 
                instead of their physical channel. We chose to tackle the second challenge.
             </p>
-            <h3>Identifying the problem</h3>
+            <h3>What We Noticed at First...</h3>
             <p>
               In order to come up with a solution, we first tried to identify the cause of FE Credit's issue.
-              While checking their digital channel (Facebook, Zalo and their website), we realized that
-              when a customer raises a question on their page, there would be an auto-reply that directs
-              the customer to FE Credit's physical channels (call FE Credit or travel to their office).
+              We found a lot of comments like this one on their Facebook page: “I want to buy a satria motorbike,
+              how much should I loan?” The current solution is to answer this question mainly through their 
+              physical channel, either call or travel to their office.
             </p>
-            <h3>Challenges</h3>
+            <h3>Problems We Identified</h3>
             <p>
-              Since we were given a dataset of FE Credit's customers, we planned on running a couple
-              machine learning models on the dataset in order to 
+              With FE Credit's current website, it's hard to determine irresponsible customers. We have no idea
+              whether the customer is borrowing too much or too little. This in turn affect profitability because
+              irresponsible customers might not be able to pay FE Credit back. Also, users need to approach a different 
+              party to do research on ideal loans and prices of that products.
+            </p>
+            <h3>Our Solution</h3>
+            <p>demo video</p>
+            <p>
+              We came up with a solution that adds more functionality to the existing website. After filling out some 
+              parameters about the product they want to buy, their monthly income, family member, our algorithm will first
+              suggest to the users differe products that best match the customer's buying ability. Instead of consulting at FE 
+              Credit's banks, the users can now browse through the suggested items themselves, therefore FE Credit can save money on 
+              customer service. 
+            </p>  
+            <p>
+              As there is a direct correlation between the amount of steps and customer drop off, we’re reducing those steps by
+              allowing the consumers to stay on FE Credit’s page instead of leaving and doing their own research. We can now track customers’
+              activities and time to add onto the customers’ dataset and determine if they  are trustworthy.
+            </p>
+            <h3>Our Next Step</h3>
+            <p>
+              For our next step, we can integrate Nucene and Elastic to accommodate bigger product dataset. More features can be added to improve model
+              accuracy of targeted customer. We would also be able to sell product ads. Through knowing more about what the customers want, we can better
+              advertise more products that fit the customer's needs, hence increasing the amount of customers seeking for FE Credit's loan. This, in turn, 
+              creates a cycle in which FE Credit can keep improving.
             </p>
           </Cell>
-          
-    
-          
+          <Cell col={5}>
+            <p>
+              images
+            </p>
+          </Cell>
         </Grid>
+        <Grid>
+          <Cell col={12}>
+            <h3>The Result</h3>
+            <p>
+              We were part of 3 teams selected for this challenge, and one of 14 teams for all challenges to become the finalists. We didn't end 
+              up winning in the end for our challenge. However, FE Credit did reach out to us. Maybe they will implement our solution after all.  
+            </p>
+          </Cell>
+        </Grid>
+
       </div>
     )
   }
