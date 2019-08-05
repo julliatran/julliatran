@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Button } from 'react-mdl';
 import angelHack from '../img/angelHack.png';
+import fb1 from '../img/AH/fb1.png';
+import fb2 from '../img/AH/fb2.png';
+import ppt from '../img/AH/ppt.png';
+import interface_ from '../img/AH/interface.jpg';
+import finalist from '../img/AH/finalist.jpg';
+import mentor from '../img/AH/mentor.jpg';
+import work from '../img/AH/work.jpg';
 class AngelHack extends Component {
   render() {
     return (
@@ -8,11 +15,12 @@ class AngelHack extends Component {
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>AngelHack Ho Chi Minh City 2019</strong></h1>
-            <img src={angelHack} />
+            <img src={angelHack}/>
           </Cell>
         </Grid>
         <Grid>
-          <Cell col={7} margin='auto' className='ah-left'>
+          <Cell col={12} className='ah-left'>
+          <img src={ppt} height="200px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/> 
             <p>
               On June 22, 2019, my team of four members participated
                in the Ho Chi Minh Hackathon, held at Fullbright University. There were
@@ -24,13 +32,17 @@ class AngelHack extends Component {
                improve customer's interractions with digital channels (Facebook, FE Website,...) 
                instead of their physical channel. We chose to tackle the second challenge.
             </p>
+            <br style={{clear:"both"}} />
             <h3>What We Noticed at First...</h3>
+            <img src={fb1} height="100px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+            <img src={fb2} height="100px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
             <p>
               In order to come up with a solution, we first tried to identify the cause of FE Credit's issue.
               We found a lot of comments like this one on their Facebook page: “I want to buy a satria motorbike,
               how much should I loan?” The current solution is to answer this question mainly through their 
               physical channel, either call or travel to their office.
             </p>
+            <br style={{clear:"both"}} />
             <h3>Problems We Identified</h3>
             <p>
               With FE Credit's current website, it's hard to determine irresponsible customers. We have no idea
@@ -38,6 +50,7 @@ class AngelHack extends Component {
               irresponsible customers might not be able to pay FE Credit back. Also, users need to approach a different 
               party to do research on ideal loans and prices of that products.
             </p>
+            <img src={interface_} height="500px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
             <h3>Our Solution</h3>
             <p>demo video</p>
             <p>
@@ -46,12 +59,13 @@ class AngelHack extends Component {
               suggest to the users differe products that best match the customer's buying ability. Instead of consulting at FE 
               Credit's banks, the users can now browse through the suggested items themselves, therefore FE Credit can save money on 
               customer service. 
-            </p>  
+            </p>
             <p>
               As there is a direct correlation between the amount of steps and customer drop off, we’re reducing those steps by
               allowing the consumers to stay on FE Credit’s page instead of leaving and doing their own research. We can now track customers’
               activities and time to add onto the customers’ dataset and determine if they  are trustworthy.
             </p>
+            
             <h3>Our Next Step</h3>
             <p>
               For our next step, we can integrate Nucene and Elastic to accommodate bigger product dataset. More features can be added to improve model
@@ -59,22 +73,32 @@ class AngelHack extends Component {
               advertise more products that fit the customer's needs, hence increasing the amount of customers seeking for FE Credit's loan. This, in turn, 
               creates a cycle in which FE Credit can keep improving.
             </p>
-          </Cell>
-          <Cell col={5}>
-            <p>
-              images
-            </p>
+            <br style={{clear:"both"}} />
           </Cell>
         </Grid>
         <Grid>
-          <Cell col={12}>
+          <Cell col={12} style={{margin:'auto',justifyContent:"space-between"}}>
             <h3>The Result</h3>
             <p>
               We were part of 3 teams selected for this challenge, and one of 14 teams for all challenges to become the finalists. We didn't end 
               up winning in the end for our challenge. However, FE Credit did reach out to us. Maybe they will implement our solution after all.  
             </p>
-          </Cell>
+            
+          </Cell> 
         </Grid>
+        
+        <Grid >
+          <Cell  col={12} >
+            <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', justifyContent:"space-between"}}>
+              <img src={mentor} height='200px' />
+              <img src={work} height='200px'/>
+              <img src={finalist}height='200px'/>
+            </div>
+            
+          </Cell>
+          <Button style={{margin:'auto'}} href="/projects" >Back</Button> 
+          <Button style={{margin:'auto'}} href="https://github.com/julliatran/AngelHack2019">Github</Button>
+        </Grid> 
 
       </div>
     )
