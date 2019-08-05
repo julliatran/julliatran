@@ -27,7 +27,7 @@ class Project extends Component {
                 </CardText>
                 <CardActions border>
                   <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/AngelHack2019" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple href="/angelHack">Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="/angelHack">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -46,7 +46,7 @@ class Project extends Component {
                 </CardText>
                 <CardActions border>
                   <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple >Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="/rubiks">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>

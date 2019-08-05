@@ -135,6 +135,12 @@
 }
 
 {/* AngelHack */}
-.ah h1{
+.ah h1 {
   color: #447374 ;
+}
+.ah h3 {
+  font-size: 3em;
+}
+.ah p {
+  font-size: 1.2em;
 }

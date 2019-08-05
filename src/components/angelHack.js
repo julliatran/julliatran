@@ -20,8 +20,8 @@ class AngelHack extends Component {
         </Grid>
         <Grid>
           <Cell col={12} className='ah-left'>
-          <img src={ppt} height="200px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/> 
-            <p>
+          <img src={ppt} height="200px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+          <p>
               On June 22, 2019, my team of four members participated
                in the Ho Chi Minh Hackathon, held at Fullbright University. There were
                around 50 teams who participated in this year's hackathon. There were 
@@ -34,8 +34,13 @@ class AngelHack extends Component {
             </p>
             <br style={{clear:"both"}} />
             <h3>What We Noticed at First...</h3>
-            <img src={fb1} height="100px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
-            <img src={fb2} height="100px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+            <figure style={{float: 'right', margin: '0px 0px 15px 15px', fontStyle:'italic',textAlign:'center', color:'#447374'}}>
+              <img src={fb1} height="100px"/>
+              <img src={fb2} height="100px"/>
+              <figcaption>(Similar customer's questions we found)</figcaption>
+            </figure>
+
+            
             <p>
               In order to come up with a solution, we first tried to identify the cause of FE Credit's issue.
               We found a lot of comments like this one on their Facebook page: “I want to buy a satria motorbike,
@@ -50,9 +55,11 @@ class AngelHack extends Component {
               irresponsible customers might not be able to pay FE Credit back. Also, users need to approach a different 
               party to do research on ideal loans and prices of that products.
             </p>
-            <img src={interface_} height="500px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+            <figure style={{float: 'right', margin: '0px 0px 15px 15px', textAlign:'center', fontStyle:'italic', color:'#447374'}}>
+              <img src={interface_} height="500px" />
+              <figcaption>(Our solution's interface)</figcaption>
+            </figure>
             <h3>Our Solution</h3>
-            <p>demo video</p>
             <p>
               We came up with a solution that adds more functionality to the existing website. After filling out some 
               parameters about the product they want to buy, their monthly income, family member, our algorithm will first
@@ -89,10 +96,19 @@ class AngelHack extends Component {
         
         <Grid >
           <Cell  col={12} >
-            <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', justifyContent:"space-between"}}>
-              <img src={mentor} height='200px' />
-              <img src={work} height='200px'/>
-              <img src={finalist}height='200px'/>
+            <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', justifyContent:"space-between", fontStyle:'italic', textAlign:'center', color:'#447374'}}>
+              <figure>
+                <img src={mentor} height='200px' alt="Talking to mentor"/>
+                <figcaption>(My group talking to our mentor)</figcaption>
+              </figure>
+              <figure>
+                <img src={work} height='200px' alt="Hard at work"/>
+                <figcaption>(We were hard at work)</figcaption>
+              </figure>
+              <figure>
+                <img src={finalist}height='200px'/>
+                <figcaption>(Our finalist-pitch)</figcaption>
+              </figure>
             </div>
             
           </Cell>
