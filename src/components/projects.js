@@ -3,6 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, 
 import RB from '../img/rubikspaint.png';
 import cnn from '../img/cnn.png';
 import spaceY from '../img/spaceY.png';
+import bball from '../img/bball.png';
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +21,7 @@ class Project extends Component {
                 <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>AngelHack Vietnam 2019</strong></h1>
+                  <p><strong>NodeJS | HTML/CSS | C++</strong></p>
                   <p>
                     <li>Finalist/Second place in the FE Credit Challenge</li>
                     <li>Created a software customer service solution</li>
@@ -37,16 +39,18 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <img src={RB} height='200px'/>
+                <img src={bball} height='200px'/>
                 <CardText>
-                <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
+                <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
+                <p><strong>Python | PyGame | PyKinnect</strong></p>
                   <p>
-                    <li>One of 10 projects that got showcased out of around 500 projects</li>
+                    <li>Won "Most Ambitious Project"</li>
+                    <li>Top 8 out of around 50 teams</li>
                   </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="/rubiks">Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/BasketballSimulator" rel="noopener noreferrer" target='blank'>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -105,14 +109,15 @@ class Project extends Component {
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
                 <img src={RB} height='200px'/>
                 <CardText>
-                <h1><strong>Hack 112 - Rubiks Paint</strong></h1>
+                <h1><strong>Rubiks Paint</strong></h1>
                   <p>
-                    <li>One of 10 projects that got showcased out of around 500 projects</li>
+                    <li>One of 10 projects out of around 500 projects</li>
+                    <li>Got showcased</li>
                   </p>
                 </CardText>
                 <CardActions border>
                   <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} href="/rubiksPaint">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>

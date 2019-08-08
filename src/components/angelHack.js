@@ -11,7 +11,7 @@ import work from '../img/AH/work.jpg';
 class AngelHack extends Component {
   render() {
     return (
-      <div className="ah" style={{width: '80%', margin: 'auto'}} >
+      <div className="ah" style={{width: '80%', margin: 'auto'}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>AngelHack Ho Chi Minh City 2019</strong></h1>
@@ -19,18 +19,18 @@ class AngelHack extends Component {
           </Cell>
         </Grid>
         <Grid>
-          <Cell col={12} className='ah-left'>
-          <img src={ppt} height="200px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
-          <p>
+          <Cell col={12}>
+            <img src={ppt} height="200px" style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+            <p>
               On June 22, 2019, my team of four members participated
-               in the Ho Chi Minh Hackathon, held at Fullbright University. There were
-               around 50 teams who participated in this year's hackathon. There were 
-               multiple challenges from IBM, Amazon and other local companies. 
-               We chose to participate in the FE Credits challenge. There are 
-               2 sub-challenges for FE Credits: the first challenge is to build a chat-bot to improve
-               customer service; the second is to provide a model or solution that will
-               improve customer's interractions with digital channels (Facebook, FE Website,...) 
-               instead of their physical channel. We chose to tackle the second challenge.
+              in the Ho Chi Minh Hackathon, held at Fullbright University. There were
+              around 50 teams who participated in this year's hackathon. There were 
+              multiple challenges from IBM, Amazon and other local companies. 
+              We chose to participate in the FE Credits challenge. There are 
+              2 sub-challenges for FE Credits: the first challenge is to build a chat-bot to improve
+              customer service; the second is to provide a model or solution that will
+              improve customer's interractions with digital channels (Facebook, FE Website,...) 
+              instead of their physical channel. We chose to tackle the second challenge.
             </p>
             <br style={{clear:"both"}} />
             <h3>What We Noticed at First...</h3>
@@ -112,8 +112,8 @@ class AngelHack extends Component {
             </div>
             
           </Cell>
-          <Button style={{margin:'auto'}} href="/projects" >Back</Button> 
-          <Button style={{margin:'auto'}} href="https://github.com/julliatran/AngelHack2019">Github</Button>
+          <Button style={{margin:'auto', textDecoration: 'none'}} href="/projects" >Back</Button> 
+          <Button colored ripple style={{margin: 'auto', textDecoration: 'none'}} rel="noopener noreferrer" target='blank'  href="https://github.com/julliatran/AngelHack2019">Github</Button>
         </Grid> 
 
       </div>
