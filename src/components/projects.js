@@ -18,7 +18,8 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px', 
+                           background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}}></CardTitle>
                 <CardText>
                   <h1><strong>AngelHack Vietnam 2019</strong></h1>
                   <p><strong>NodeJS | HTML/CSS | C++</strong></p>
@@ -28,8 +29,12 @@ class Project extends Component {
                   </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/AngelHack2019" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="/angelHack">Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}}
+                          href="https://github.com/julliatran/AngelHack2019" 
+                          rel="noopener noreferrer" target='blank'>
+                            GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}}
+                          href="/angelHack">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -49,8 +54,12 @@ class Project extends Component {
                   </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/BasketballSimulator" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="">Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} 
+                          href="https://github.com/julliatran/BasketballSimulator"
+                          rel="noopener noreferrer"
+                          target='blank'>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} 
+                          href="">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -66,7 +75,8 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px',
+                           background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>VGG16 AutoEncoder</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -116,8 +126,11 @@ class Project extends Component {
                   </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="https://github.com/julliatran/rubikspaint" rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} href="/rubiksPaint">Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} 
+                          href="https://github.com/julliatran/rubikspaint" 
+                          rel="noopener noreferrer" target='blank'>GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} 
+                          href="/rubiksPaint">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -128,7 +141,8 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}} ></CardTitle>
+                <CardTitle style={{color: '#fff', height: '200px', 
+                           background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>Webscraper</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -173,7 +187,8 @@ class Project extends Component {
   render() {
     return (
       <div className="category-tabs">
-        <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs  activeTab={this.state.activeTab} 
+               onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Competitions</Tab>
           <Tab>Machine Learning</Tab>
           <Tab>Python</Tab>
