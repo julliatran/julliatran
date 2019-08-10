@@ -134,13 +134,14 @@
 
 }
 
-{/* AngelHack */}
-.ah h1 {
-  color: #447374 ;
+/* Projects Inner Pages Style */
+.proj h1 {
+  color: #447374;
 }
-.ah h3 {
+.proj h3 {
   font-size: 3em;
+  color: #447374;
 }
-.ah p {
+.proj p {
   font-size: 1.2em;
 }

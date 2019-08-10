@@ -12,7 +12,7 @@ import p3 from '../img/rubiks/test7.png';
 class Rubiks extends Component {
   render() {
     return (
-      <div className="ah" style={{width: '80%', margin: 'auto'}}>
+      <div className="proj" style={{width: '80%', margin: 'auto'}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>Rubiks Paint</strong></h1>

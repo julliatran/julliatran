@@ -11,7 +11,7 @@ import work from '../img/AH/work.jpg';
 class AngelHack extends Component {
   render() {
     return (
-      <div className="ah" style={{width: '80%', margin: 'auto'}}>
+      <div className="proj" style={{width: '80%', margin: 'auto'}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>AngelHack Ho Chi Minh City 2019</strong></h1>

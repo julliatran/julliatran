@@ -6,8 +6,9 @@ import Aboutme from './aboutme';
 import Projects from './projects';
 import Art from './artportfolio';
 import Resume from './resume'; 
-import AngelHack from './angelHack';
-import Rubiks from './rubiks';
+import AngelHack from './projects/angelHack';
+import Rubiks from './projects/rubiks';
+import Hack112 from './projects/hack112';
 
 
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
     <Route exact path="/artportfolio" component={ Art }></Route>
     <Route exact path="/angelHack" component={ AngelHack }></Route>
     <Route exact path="/rubiksPaint" component={ Rubiks }></Route>
+    <Route exact path="/hack112" component={ Hack112 }></Route>
   </Switch>
   ); 
 }

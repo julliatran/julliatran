@@ -34,7 +34,7 @@ class Project extends Component {
                           rel="noopener noreferrer" target='blank'>
                             GitHub</Button>
                   <Button colored ripple style={{textDecoration: 'none'}}
-                          href="/angelHack">Learn More</Button>
+                          href="angelHack">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -59,7 +59,7 @@ class Project extends Component {
                           rel="noopener noreferrer"
                           target='blank'>GitHub</Button>
                   <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="">Learn More</Button>
+                          href="/hack112">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
