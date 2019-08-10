@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { Grid, Cell, Button } from 'react-mdl';
 import rubiks from '../img/rubikspaint.png';
 import Video from './video';
+import t1 from '../img/rubiks/test2.jpg';
+import p1 from '../img/rubiks/test2.png';
+import t2 from '../img/rubiks/test4.jpg';
+import p2 from '../img/rubiks/test4.png';
+import t3 from '../img/rubiks/test7.jpg';
+import p3 from '../img/rubiks/test7.png';
 
 class Rubiks extends Component {
   render() {
@@ -72,6 +78,38 @@ class Rubiks extends Component {
               rubiks cube) and has only 6 colors. I used scipy and numpy library
               for this part.
             </p>
+            <Grid>
+            <Cell  col={12}>
+              <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
+                          justifyContent:"space-between", fontStyle:'italic', 
+                          textAlign:'center', color:'#447374'}}>
+                <figure>
+                  <img src={t1} height='350' alt="Input image 1"/>
+                  <figcaption>(Original image 1)</figcaption>
+                </figure>
+                <figure>
+                  <img src={t2} height='350' alt="Original image 1"/>
+                  <figcaption>(Original image 2)</figcaption>
+                </figure>
+                <figure>
+                  <img src={t3}height='350'/>
+                  <figcaption>(Original image 3)</figcaption>
+                </figure>
+                <figure>
+                  <img src={p1}height='350'/>
+                  <figcaption>(Output image 1)</figcaption>
+                </figure>
+                <figure>
+                  <img src={p2}height='350'/>
+                  <figcaption>(Output image 2)</figcaption>
+                </figure>
+                <figure>
+                  <img src={p3}height='350'/>
+                  <figcaption>(Output image 3)</figcaption>
+                </figure>
+              </div>
+            </Cell>
+          </Grid>
             <h3>Result</h3>
             <p>
               After I submitted my project, I was invited to showcase my work, 
@@ -81,6 +119,7 @@ class Rubiks extends Component {
             </p>
           </Cell>
         </Grid>
+        
         <Grid>
           <Button colored ripple
                   style={{margin: 'auto', textDecoration: 'none'}} 
@@ -90,8 +129,6 @@ class Rubiks extends Component {
             rel="noopener noreferrer" target='blank'
             href="https://github.com/julliatran/rubikspaint">Github</Button>
         </Grid>
-        
-        
       </div>
     );
   }
