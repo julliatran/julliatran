@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Cell, Button } from 'react-mdl';
-import rubiks from '../img/rubikspaint.png';
 import Video from './video';
 import t1 from '../img/rubiks/test2.jpg';
 import p1 from '../img/rubiks/test2.png';
@@ -8,6 +7,8 @@ import t2 from '../img/rubiks/test4.jpg';
 import p2 from '../img/rubiks/test4.png';
 import t3 from '../img/rubiks/test7.jpg';
 import p3 from '../img/rubiks/test7.png';
+import rotate from '../img/rubiks/rotate.gif';
+import select from '../img/rubiks/select.gif';
 
 class Rubiks extends Component {
   render() {
@@ -16,7 +17,7 @@ class Rubiks extends Component {
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>Rubiks Paint</strong></h1>
-            <div style={{margin: 'auto', width:'900px',height:'600px'}}>
+            <div style={{margin: 'auto'}}>
               <Video videoId='WErlUYfhH-k'/>
             </div>
           </Cell>
@@ -55,7 +56,13 @@ class Rubiks extends Component {
               can hit spacebar to loop through the moves or select the speed to 
               slow down to easily follow the solutions.
             </p>
+            
             <br style={{clear:"both"}} />
+            <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
+                         justifyContent:"space-between", textAlign:'center'}}>
+              <img style={{height:'250px', margin:'auto'}} src={select} ></img>
+              <img style={{height:'250px', margin:'auto'}} src={rotate} ></img>
+            </div>
             <h3>Challenges</h3>
             <p>
               The main challenge I faced was coming up with the algorithm. 
@@ -119,7 +126,6 @@ class Rubiks extends Component {
             </p>
           </Cell>
         </Grid>
-        
         <Grid>
           <Button colored ripple
                   style={{margin: 'auto', textDecoration: 'none'}} 

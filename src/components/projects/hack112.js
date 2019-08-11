@@ -6,7 +6,12 @@ class Hack112 extends Component {
   render() {
     return (
       <div className="proj" style={{width: '80%', margin: 'auto'}}>
-        <Grid>HELLO</Grid>
+        <Grid>
+          <Cell col={12} style={{textAlign:'center'}}>
+            <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
+          </Cell>
+          
+        </Grid>
       </div>
     )
   }
