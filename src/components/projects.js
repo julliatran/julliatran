@@ -120,6 +120,7 @@ class Project extends Component {
                 <img src={RB} height='200px'/>
                 <CardText>
                 <h1><strong>Rubiks Paint</strong></h1>
+                <p><strong>Python | Panda3D | NumPy | SciPy</strong></p>
                   <p>
                     <li>One of 10 projects out of around 500 projects</li>
                     <li>Got showcased</li>

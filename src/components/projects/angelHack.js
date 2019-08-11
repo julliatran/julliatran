@@ -15,6 +15,7 @@ class AngelHack extends Component {
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>AngelHack Ho Chi Minh City 2019</strong></h1>
+            <h3><strong>NodeJS | HTML/CSS | C++</strong></h3>
             <img src={angelHack}/>
           </Cell>
         </Grid>
@@ -100,11 +101,6 @@ class AngelHack extends Component {
               seeking for FE Credit's loan. This, in turn, creates a cycle in 
               which FE Credit can keep improving.
             </p>
-            <br style={{clear:"both"}} />
-          </Cell>
-        </Grid>
-        <Grid>
-          <Cell col={12} style={{margin:'auto',justifyContent:"space-between"}}>
             <h3>The Result</h3>
             <p>
               We were part of 3 teams selected for this challenge, and one of 
@@ -112,10 +108,8 @@ class AngelHack extends Component {
               up winning in the end for our challenge. However, FE Credit did 
               reach out to us. Maybe they will implement our solution after all.  
             </p>
-            
-          </Cell> 
+          </Cell>
         </Grid>
-        
         <Grid >
           <Cell  col={12} >
             <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 

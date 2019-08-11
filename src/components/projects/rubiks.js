@@ -17,6 +17,7 @@ class Rubiks extends Component {
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>Rubiks Paint</strong></h1>
+            <h3><strong>Python | Panda3D | NumPy | SciPy</strong></h3>
             <div style={{margin: 'auto'}}>
               <Video videoId='WErlUYfhH-k'/>
             </div>
