@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
-import RB from '../img/rubikspaint.png';
-import cnn from '../img/cnn.png';
-import spaceY from '../img/spaceY.png';
-import bball from '../img/bball.png';
+import RB from './img/rubikspaint.png';
+import cnn from './img/cnn.png';
+import spaceY from './img/spaceY.png';
+import bball from './img/bball.png';
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -169,11 +169,12 @@ class Project extends Component {
                 <img src={spaceY} height='200px'/>
                 <CardText>
                   <h1><strong>SpaceY</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                  <p>Photon Particle IO | PIR Sensor | HTML </p>
                 </CardText>
                 <CardActions border>
                   <Button colored ripple>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}}
+                          href="/spaceY">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>

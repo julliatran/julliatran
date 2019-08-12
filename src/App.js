@@ -28,11 +28,28 @@ function App() {
         <Main/>
       </Content>
       <Footer className="footer" size="mega">
-        <FooterSection type="top">
+        <FooterSection type="middle">
           <FooterLinkList>
             <div style={{textAlign:'center'}}>
-              <h4><strong>Contact me here! </strong></h4>
-              <p><strong>tranjullia@gmail.com</strong></p>
+              <p><strong>Contact me here!</strong></p>
+              <h4><strong>tranjullia@gmail.com</strong></h4>
+            </div>
+            <div style={{textAlign:'center'}} className="footer-social-links">
+                  {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
+                rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-linkedin-square" aria-hidden="true"/>
+              </a>
+              {/* Github */}
+              <a href="https://github.com/julliatran" 
+                rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-github-square" aria-hidden="true"/>
+              </a>
+              {/* YouTube */}
+              <a href="https://www.youtube.com/channel/UCAJyvelCfya76Nk0VLQvWYA?view_as=subscriber"
+                rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-youtube-square" aria-hidden="true"/>
+              </a>
             </div>
           </FooterLinkList>
         </FooterSection>

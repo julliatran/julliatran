@@ -9,7 +9,7 @@ import Resume from './resume';
 import AngelHack from './projects/angelHack';
 import Rubiks from './projects/rubiks';
 import Hack112 from './projects/hack112';
-
+import SpaceY from './projects/spaceY';
 
 const Main = () => {
   return (
@@ -22,6 +22,7 @@ const Main = () => {
     <Route exact path="/angelHack" component={ AngelHack }></Route>
     <Route exact path="/rubiksPaint" component={ Rubiks }></Route>
     <Route exact path="/hack112" component={ Hack112 }></Route>
+    <Route exact path="/spaceY" component={ SpaceY }></Route>
   </Switch>
   ); 
 }

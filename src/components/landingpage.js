@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import avatar from "../img/avatar.jpeg";
+import avatar from "./img/avatar.jpeg";
 
 class Landing extends Component {
   render() {
