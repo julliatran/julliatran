@@ -86,45 +86,52 @@ class Rubiks extends Component {
               rubiks cube) and has only 6 colors. I used scipy and numpy library
               for this part.
             </p>
-            <Grid>
-            <Cell  col={12}>
-              <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
-                          justifyContent:"space-between", fontStyle:'italic', 
-                          textAlign:'center', color:'#447374'}}>
-                <figure>
-                  <img src={t1} height='350' alt="Input image 1"/>
-                  <figcaption>(Original image 1)</figcaption>
-                </figure>
-                <figure>
-                  <img src={t2} height='350' alt="Original image 1"/>
-                  <figcaption>(Original image 2)</figcaption>
-                </figure>
-                <figure>
-                  <img src={t3}height='350'/>
-                  <figcaption>(Original image 3)</figcaption>
-                </figure>
-                <figure>
-                  <img src={p1}height='350'/>
-                  <figcaption>(Output image 1)</figcaption>
-                </figure>
-                <figure>
-                  <img src={p2}height='350'/>
-                  <figcaption>(Output image 2)</figcaption>
-                </figure>
-                <figure>
-                  <img src={p3}height='350'/>
-                  <figcaption>(Output image 3)</figcaption>
-                </figure>
-              </div>
-            </Cell>
-          </Grid>
+          </Cell>
+        </Grid>
+        <Grid style={{display:"flex",
+                      textAlign:"center",
+                      justifyContent: "space-around",
+                      alignItems: "flex-start"}}>
+          <Cell col={4}>
+            <figure>
+                <img src={t1} style={{height:"auto",width:"70%"}} alt="Input image 1"/>
+                <figcaption>(Original image 1)</figcaption>
+              </figure>
+              <figure>
+                <img src={p1} style={{height:"auto",width:"70%"}}/>
+                <figcaption>(Output image 1)</figcaption>
+              </figure>
+          </Cell>
+          <Cell col={4}>
+            <figure>
+                <img src={t2} style={{height:"auto",width:"60%"}} alt="Original image 1"/>
+                <figcaption>(Original image 2)</figcaption>
+            </figure>
+            <figure>
+                <img src={p2} style={{height:"auto",width:"60%"}}/>
+                <figcaption>(Output image 2)</figcaption>
+              </figure>
+          </Cell>
+          <Cell col={4}>
+            <figure>
+                <img src={t3} style={{height:"auto",width:"65%"}}/>
+                <figcaption>(Original image 3)</figcaption>
+              </figure>
+              <figure>
+                <img src={p3} style={{height:"auto",width:"65%"}}/>
+                <figcaption>(Output image 3)</figcaption>
+              </figure>
+          </Cell>
+        </Grid>
+        <Grid>
+          <Cell col={12}>
             <h3>Result</h3>
-            <p>
-              After I submitted my project, I was invited to showcase my work, 
-              along with 9 other people in front of both sections of the class
-              consisting of around 500 people. I didn't end up winning but 
-              it was a really cool experience.
-            </p>
+              <p>
+                After I submitted my project, I was invited to showcase my work, 
+                along with 9 other people in front of both sections of the class
+                consisting of around 500 people. I didn't end up winning but 
+                it was a really cool experience.
+              </p>
           </Cell>
         </Grid>
         <Grid>

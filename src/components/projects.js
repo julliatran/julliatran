@@ -122,7 +122,8 @@ class Project extends Component {
                 <h1><strong>Rubiks Paint</strong></h1>
                 <p><strong>Python | Panda3D | NumPy | SciPy</strong></p>
                   <p>
-                    <li>One of 10 projects out of around 500 projects</li>
+                    <li>One of 10 projects that got chosen out of around 500 
+                        projects</li>
                     <li>Got showcased</li>
                   </p>
                 </CardText>
@@ -143,7 +144,7 @@ class Project extends Component {
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '200px', 
-                           background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}} ></CardTitle>
+                           background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}}></CardTitle>
                 <CardText>
                   <h1><strong>Webscraper</strong></h1>
                   <p>aksjhdkjdfasdakjfhk</p>
@@ -169,7 +170,11 @@ class Project extends Component {
                 <img src={spaceY} height='200px'/>
                 <CardText>
                   <h1><strong>SpaceY</strong></h1>
-                  <p>Photon Particle IO | PIR Sensor | HTML </p>
+                  <p><strong>Photon Particle IO | PIR Sensor | HTML</strong></p>
+                  <p>
+                    <li>Participated in the Meeting of the 
+                        Minds at CMU in May 2019</li>
+                  </p>
                 </CardText>
                 <CardActions border>
                   <Button colored ripple>GitHub</Button>

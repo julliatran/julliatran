@@ -148,6 +148,22 @@
   font-size: 1.2em;
 }
 
+/*Art Portfolio*/
+.left-col {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top:10%;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  background: rgba(114, 186, 94, 0.05);
+}
+.ava {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  
+}
+
 /*Footer*/
 .footer {
   margin: 'auto';
@@ -168,3 +184,4 @@
   margin-right: 15px;
   color: white
 }
+

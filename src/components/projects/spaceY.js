@@ -15,7 +15,12 @@ class SpaceY extends Component {
             <div style={{margin: 'auto'}}>
               <Video videoId='F77k1sSP7SM'/>
             </div>
-            <div style={{paddingTop:'1em'}}><img style={{width:'900px'}} src = { poster }/></div>
+            <div style={{paddingTop:'1em'}}>
+                <img style={{width:'900px'}} src = { poster }/></div>
+            <p>We participated in the Meeting of the Minds at Carnegie Mellon
+                University in May 2019. It was a lot of fun to show case our 
+                project with the students and staffs who attended the event.
+            </p>
           </Cell>
         </Grid>
         <Grid>
