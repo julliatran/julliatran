@@ -60,8 +60,8 @@ class Rubiks extends Component {
             
             <br style={{clear:"both"}} />
             <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
-                         justifyContent:"space-between", textAlign:'center'}}>
-              <img style={{height:'250px', margin:'auto'}} src={select} ></img>
+                         justifyContent:"space-between"}}>
+              <img style={{height:'250px', margin:"auto"}} src={select} ></img>
               <img style={{height:'250px', margin:'auto'}} src={rotate} ></img>
             </div>
             <h3>Challenges</h3>
