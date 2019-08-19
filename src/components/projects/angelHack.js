@@ -8,6 +8,7 @@ import interface_ from '../img/AH/interface.jpg';
 import finalist from '../img/AH/finalist.jpg';
 import mentor from '../img/AH/mentor.jpg';
 import work from '../img/AH/work.jpg';
+
 class AngelHack extends Component {
   render() {
     return (
@@ -116,19 +117,20 @@ class AngelHack extends Component {
                          justifyContent:"space-between", fontStyle:'italic', 
                          textAlign:'center', color:'#447374'}}>
               <figure>
-                <img src={mentor} height='200px' alt="Talking to mentor"/>
+                <img src={mentor} height='200px' alt="Talking to mentor" style={{position:"relative"}}/>
                 <figcaption>(My group talking to our mentor)</figcaption>
               </figure>
               <figure>
-                <img src={work} height='200px' alt="Hard at work"/>
+                <img src={work} height='200px' alt="Hard at work" style={{position:"relative"}}/>
                 <figcaption>(We were hard at work)</figcaption>
               </figure>
+             
               <figure>
-                <img src={finalist}height='200px'/>
+                <img src={finalist}height='200px' style={{position:"relative"}}/>
                 <figcaption>(Our finalist-pitch)</figcaption>
               </figure>
+              
             </div>
-            
           </Cell>
           <Button style={{margin:'auto', textDecoration: 'none'}} 
                   href="/projects" >Back</Button> 

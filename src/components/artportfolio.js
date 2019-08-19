@@ -27,6 +27,13 @@ import p20 from "./img/art/20.jpg";
 import p21 from "./img/art/21.jpg";
 import p22 from "./img/art/22.jpg";
 import p23 from "./img/art/23.jpg";
+import p24 from "./img/art/24.jpg";
+import p25 from "./img/art/25.jpg";
+import p26 from "./img/art/26.jpg";
+import p27 from "./img/art/27.jpg";
+import p28 from "./img/art/28.jpg";
+import p29 from "./img/art/29.jpg";
+
 
 const captionStyle = {
   backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -210,7 +217,50 @@ const IMAGES =
   thumbnailWidth: 2239,
   thumbnailHeight: 2872,
   caption: "Din Din! - Collage and Oil Paint on Wooden Canvas"
-}]
+},
+{
+  src: p24,
+  thumbnail: p24,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+},
+{
+  src: p25,
+  thumbnail: p25,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+},
+{
+  src: p26,
+  thumbnail: p26,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+},
+{
+  src: p27,
+  thumbnail: p27,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+},
+{
+  src: p28,
+  thumbnail: p28,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+},
+{
+  src: p29,
+  thumbnail: p29,
+  thumbnailWidth: 2263,
+  thumbnailHeight: 3550,
+  caption: "Fear - Printmaking"
+}
+]
 {/* Hover */}
 const hover = IMAGES.map(i => { i.customOverlay = (<div style={captionStyle}>
                                                    <div>{i.caption}</div>
@@ -226,6 +276,8 @@ class Art extends Component {
             <figure className="ava"style={{width:"300px", textAlign:"center"}}>
               <img src={ava} style={{height:"auto",width:"100%"}}/>
               <h3><strong>My Art Portfolio</strong></h3>
+              <p>These are some of the artworks I've created over the years.</p>
+              <h3>✿✿✿</h3>
             </figure>               
           </Cell>
           <Cell col={9}>

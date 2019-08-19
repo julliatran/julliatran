@@ -18,15 +18,18 @@
 
 .landing-grid {
   text-align: center;
-  position: flex;
+  position: relative;
   top: 0;
   left: 0;
  
-  background: linear-gradient(270deg, #22c1c3, #fdbb2d);
+  /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
   background-size: 600% 600%;
 
-  animation: Transistion 6s ease infinite;
+  animation: Transistion 6s ease infinite;*/
 
+  background-image: url('./components/img/clouds.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .avatar-img {
@@ -73,7 +76,7 @@
 }
 
 .social-links {
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 50%;
   margin: auto;
@@ -88,9 +91,9 @@
 
 .category-tabs {
   color: black;
-  font-size: 5em;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
+  background-image: url('./components/img/clouds.JPG');
+  background-size: cover;
+  padding-bottom: 15em;
 }
 .category-tabs h1 {
   color: black;
@@ -100,9 +103,7 @@
 .project-grid {
   display: flex;
 }
-.project-grid Card {
-  background: black;
-}
+
 .project-grid h1 {
   font-size: 2em;
 }
@@ -154,8 +155,7 @@
   justify-content: space-around;
   align-items: flex-start;
   padding-top:10%;
-  border: 2px dashed rgba(114, 186, 94, 0.35);
-  background: rgba(114, 186, 94, 0.05);
+  background: rgba(114, 186, 94, 0.3);
 }
 .ava {
   position: -webkit-sticky;
@@ -165,8 +165,6 @@
 
 /*Footer*/
 .footer {
-  margin: 'auto';
-  padding: 2em;
   justify-content: space-between;
 }
 .footer p {

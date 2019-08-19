@@ -17,7 +17,7 @@ class Project extends Component {
         <Grid>
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <CardTitle style={{color: '#fff', height: '200px', 
                            background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}}></CardTitle>
                 <CardText>
@@ -43,7 +43,7 @@ class Project extends Component {
           </Cell>
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={bball} height='200px'/>
                 <CardText>
                 <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
@@ -74,7 +74,7 @@ class Project extends Component {
         <Grid>
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
                 <CardTitle style={{color: '#fff', height: '200px',
                            background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
                 <CardText>
@@ -93,7 +93,7 @@ class Project extends Component {
           </Cell>
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={cnn} height='200px'/>
                 <CardText>
                   <h1><strong>CNN AutoEncoder</strong></h1>
@@ -116,7 +116,7 @@ class Project extends Component {
         <Grid>
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
                 <img src={RB} height='200px'/>
                 <CardText>
                 <h1><strong>Rubiks Paint</strong></h1>
@@ -142,7 +142,7 @@ class Project extends Component {
           
           <Cell col={6}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <CardTitle style={{color: '#fff', height: '200px', 
                            background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}}></CardTitle>
                 <CardText>
@@ -166,7 +166,7 @@ class Project extends Component {
         <Grid>
           <Cell col={12}>
             <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto'}}>
+              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={spaceY} height='200px'/>
                 <CardText>
                   <h1><strong>SpaceY</strong></h1>
@@ -194,14 +194,13 @@ class Project extends Component {
   render() {
     return (
       <div className="category-tabs">
-        <Tabs  activeTab={this.state.activeTab} 
+        <Tabs style ={{background:"white"}} activeTab={this.state.activeTab} 
                onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Competitions</Tab>
           <Tab>Machine Learning</Tab>
           <Tab>Python</Tab>
           <Tab>Hardware</Tab>
         </Tabs>  
-
         <div className="content">{this.toggleCategories()}</div>
       </div>
     );

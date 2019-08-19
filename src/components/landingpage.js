@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import avatar from "./img/avatar.jpeg";
+import background from "./img/background.JPG";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+{/*
+  <img 
+                src={avatar}
+                alt="avatar"
+                className="avatar-img"
+              /> */}
+
+const ParallaxImage = () => (
+  <Parallax y={[-20, 20]} tagOuter="figure">
+      <img src={background} style={{width: '75%', margin: 'auto'}}/>
+  </Parallax>
+);
 
 class Landing extends Component {
   render() {
     return (
       <div style={{width: '100%', margin: 'auto'}}> 
         <Grid className="landing-grid">
-          <Cell col={12}>
-              <img 
-                src={avatar}
-                alt="avatar"
-                className="avatar-img"
-              />
+          <Cell col={12} >
+              <img src={background} alt="Picture of Jullia Tran" style={{borderRadius: "10px", width:"75%", position: "relative"}} />
               <div className="banner-text">
+                
                 <h1>I'm Jullia Tran</h1>
                 <hr/>
                 <p>Python | C | Machine Learning | HTML/CSS | React </p>

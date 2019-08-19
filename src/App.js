@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl';
 import Main from'./components/main';
-import { Link } from 'react-router-dom';
+import { Link, HashRouter, withRouter} from 'react-router-dom';
+
 function App() {
   return (
+     
     <div className="demo-big-content" style ={{width: '100%', margin:'auto'}}>
     <Layout>
       <Header transparent className="header-color" title={<Link style={{textDecoration:'none'}} to="">Title</Link>} scroll>
