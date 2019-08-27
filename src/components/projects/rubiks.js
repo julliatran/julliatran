@@ -92,6 +92,7 @@ class Rubiks extends Component {
                       textAlign:"center",
                       justifyContent: "space-around",
                       alignItems: "flex-start"}}>
+                                     
           <Cell col={4}>
             <figure>
                 <img src={t1} style={{height:"auto",width:"70%"}} alt="Input image 1"/>

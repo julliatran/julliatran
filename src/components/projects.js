@@ -14,7 +14,7 @@ class Project extends Component {
     /* COMPETITIONS */
     if(this.state.activeTab === 0) {
       return (
-        <Grid>
+        <Grid >
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
@@ -79,7 +79,7 @@ class Project extends Component {
                            background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>VGG16 AutoEncoder</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                  <p>Implemented and Tested</p>
                 </CardText>
                 <CardActions border>
                   <Button colored ripple>GitHub</Button>

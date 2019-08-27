@@ -21,15 +21,14 @@
   position: relative;
   top: 0;
   left: 0;
+  margin-bottom: 3em;
+  padding: 0.5em;
  
   /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
   background-size: 600% 600%;
 
   animation: Transistion 6s ease infinite;*/
 
-  background-image: url('./components/img/clouds.JPG');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .avatar-img {
@@ -47,12 +46,13 @@
 .banner-text {
   background-color: black;
   opacity: .8;
-  width: 75%;
-  margin: auto;
+  width: 100%;
   margin-top: 2em;
   margin-bottom: 5em;
   padding: 3em;
-  border-radius: 10px;
+  margin-left:0;
+  margin-right:0;
+  text-align: center;
 }
 
 .banner-text h1 {
@@ -166,6 +166,8 @@
 /*Footer*/
 .footer {
   justify-content: space-between;
+  position: relative;
+  bottom: 0px;
 }
 .footer p {
   font-size: 1.3em;
