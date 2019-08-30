@@ -24,10 +24,12 @@ class Landing extends Component {
         
         <Grid className="landing-grid" >
             
-            <Cell col={4} style={{borderStyle:"solid", padding: "2em", margin:"auto", backgroundImage: `url(${background})`, height:"350px", backgroundSize:"cover"}}>
+            <Cell col={4} style={{padding: "2em", 
+                                  margin:"auto", backgroundImage: `url(${background})`,
+                                  height:"350px", backgroundSize:"cover"}}>
                 
             </Cell>
-            <Cell col={8}  style={{borderStyle:"solid", height:"350px"}}>
+            <Cell col={8}  style={{height:"350px"}}>
               <div className="banner-text">
                 <h1>I'm Jullia Tran</h1>
                 <hr/>
