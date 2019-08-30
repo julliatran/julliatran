@@ -21,35 +21,40 @@ class Landing extends Component {
                    backgroundRepeat: "no-repeat",
                    backgroundSize: "cover",
                    width: '100%', left:"0px", right:"0px"}}> 
+        
         <Grid className="landing-grid" >
-          <Cell col={12} >
-              <img src={background} alt="Picture of Jullia Tran" style={{borderRadius: "10px", width:"40%", position: "relative"}} />
-          </Cell>
+            
+            <Cell col={4} style={{borderStyle:"solid", padding: "2em", margin:"auto", backgroundImage: `url(${background})`, height:"350px", backgroundSize:"cover"}}>
+                
+            </Cell>
+            <Cell col={8}  style={{borderStyle:"solid", height:"350px"}}>
+              <div className="banner-text">
+                <h1>I'm Jullia Tran</h1>
+                <hr/>
+                <p>Python | C | Machine Learning | HTML/CSS | React </p>
+              
+                <div className="social-links">
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
+                    rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-linkedin-square" aria-hidden="true"/>
+                  </a>
+                  {/* Github */}
+                  <a href="https://github.com/julliatran" 
+                    rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-github-square" aria-hidden="true"/>
+                  </a>
+                  {/* YouTube */}
+                  <a href="https://www.youtube.com/channel/UCAJyvelCfya76Nk0VLQvWYA?view_as=subscriber"
+                    rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-youtube-square" aria-hidden="true"/>
+                  </a>
+                </div>
+                </div>
+            </Cell>
         </Grid>
         <Grid noSpacing>
-          <div className="banner-text">
-          <h1>I'm Jullia Tran</h1>
-          <hr/>
-          <p>Python | C | Machine Learning | HTML/CSS | React </p>
         
-          <div className="social-links">
-            {/* LinkedIn */}
-            <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
-              rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-linkedin-square" aria-hidden="true"/>
-            </a>
-            {/* Github */}
-            <a href="https://github.com/julliatran" 
-              rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-github-square" aria-hidden="true"/>
-            </a>
-            {/* YouTube */}
-            <a href="https://www.youtube.com/channel/UCAJyvelCfya76Nk0VLQvWYA?view_as=subscriber"
-              rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-youtube-square" aria-hidden="true"/>
-            </a>
-          </div>
-        </div>
         </Grid>
         
       </div>

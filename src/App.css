@@ -21,7 +21,6 @@
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 3em;
   padding: 0.5em;
  
   /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
@@ -47,8 +46,6 @@
   background-color: black;
   opacity: .8;
   width: 100%;
-  margin-top: 2em;
-  margin-bottom: 5em;
   padding: 3em;
   margin-left:0;
   margin-right:0;
