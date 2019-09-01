@@ -10,7 +10,7 @@ import AngelHack from './projects/angelHack';
 import Rubiks from './projects/rubiks';
 import Hack112 from './projects/hack112';
 import SpaceY from './projects/spaceY';
-
+import Webscraper from './projects/webscraper';
 const Main = () => {
   return (
   <Switch>
@@ -23,6 +23,7 @@ const Main = () => {
     <Route exact path="/rubiksPaint" component={ Rubiks }></Route>
     <Route exact path="/hack112" component={ Hack112 }></Route>
     <Route exact path="/spaceY" component={ SpaceY }></Route>
+    <Route exact path="/webscraper" component={ Webscraper }></Route>
   </Switch>
   ); 
 }

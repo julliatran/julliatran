@@ -2,18 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import cloud from "./img/clouds.JPG";
 import background from "./img/background.JPG";
-import RB from './img/rubikspaint.png';
-import cnn from './img/cnn.png';
-import spaceY from './img/spaceY.png';
-import bball from './img/bball.png';
-{/*
-  <img 
-                src={avatar}
-                alt="avatar"
-                className="avatar-img"
-              /> */}
-
-
 class Landing extends Component {
   render() {
     return (
@@ -27,7 +15,6 @@ class Landing extends Component {
             <Cell col={4} style={{padding: "2em", 
                                   margin:"auto", backgroundImage: `url(${background})`,
                                   height:"350px", backgroundSize:"cover"}}>
-                
             </Cell>
             <Cell col={8}  style={{height:"350px"}}>
               <div className="banner-text">
@@ -54,9 +41,6 @@ class Landing extends Component {
                 </div>
                 </div>
             </Cell>
-        </Grid>
-        <Grid noSpacing>
-        
         </Grid>
         
       </div>

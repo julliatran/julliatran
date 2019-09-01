@@ -53,9 +53,9 @@ class Hack112 extends Component {
             </p>
             <p>Below is a picture of my team smiling, prize in hand: 
             </p>
-            <div style={{textAlign:'center', margin:'auto'}}>
-              <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img style={{height:'500px', margin:'auto'}} src={team} ></img>
+            <div>
+              <figure style={{textAlign:'center', fontStyle:'italic', color:'#447374'}}>
+                <div className="proj-img"><img src={team}></img></div>
                 <figcaption>
                   (From left to right: Vikram Bhat, Daniel Cohen, Jullia Tran -
                   me, and Diva Marty)
@@ -75,7 +75,7 @@ class Hack112 extends Component {
             Github</Button>
         </Grid>
       </div>
-    )
+    );
   }
 }
 export default Hack112;

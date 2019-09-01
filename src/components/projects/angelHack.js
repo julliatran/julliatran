@@ -14,10 +14,10 @@ class AngelHack extends Component {
     return (
       <div className="proj" style={{width: '80%', margin: 'auto'}}>
         <Grid>
-          <Cell col={12} style={{textAlign:'center'}}>
+          <Cell col={12} style={{textAlign:'center', margin: 'auto'}}>
             <h1><strong>AngelHack Ho Chi Minh City 2019</strong></h1>
             <h3><strong>NodeJS | HTML/CSS | C++</strong></h3>
-            <img src={angelHack}/>
+            <div className="proj-img"><img style={{alignItems:"center"}} src={angelHack}/></div>
           </Cell>
         </Grid>
         <Grid>

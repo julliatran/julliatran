@@ -6,10 +6,11 @@ import { Link} from 'react-router-dom';
 
 function App() {
   return (
-     
     <div style ={{width: '100%', margin:'auto'}}>
     <Layout>
-      <Header transparent className="header-color" title={<Link style={{textDecoration:'none'}} to="">Title</Link>} scroll>
+      <Header transparent className="header-color" 
+              title={<Link style={{textDecoration:'none', color:"white", fontSize:"18px"}} 
+                      to=""><strong>Jullia Tran</strong></Link>} scroll>
         <Navigation>
           <Link style={{textDecoration:'none'}} to="/projects" ><strong>PROJECTS</strong></Link>
           <Link style={{textDecoration:'none'}} to="/aboutme"><strong>ABOUT</strong></Link>
@@ -17,7 +18,7 @@ function App() {
           <Link style={{textDecoration:'none'}} to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
         </Navigation>
       </Header>
-      <Drawer title="Title">
+      <Drawer title={<Link style={{textDecoration:'none', color:"grey", fontSize:"18px"}} to=""><strong>Home</strong></Link>}>
         <Navigation>
           <Link style={{textDecoration:'none'}} to="/projects"><strong>PROJECTS</strong></Link>
           <Link style={{textDecoration:'none'}} to="/aboutme"><strong>ABOUT</strong></Link>

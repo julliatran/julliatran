@@ -4,6 +4,7 @@ import RB from './img/rubikspaint.png';
 import cnn from './img/cnn.png';
 import spaceY from './img/spaceY.png';
 import bball from './img/bball.png';
+import webs from './img/webs/citydata.png';
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -79,17 +80,22 @@ class Project extends Component {
                            background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
                 <CardText>
                   <h1><strong>VGG16 AutoEncoder</strong></h1>
-                  <p>Implemented and Tested</p>
+                  <p>
+                    <li>Implemented and Tested using Keras</li>
+                    <li>Used pretrained VGG16 model and built a decoder
+                        to test on eddy currents dataset for feature extractions</li>
+                  </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple
+                          href="https://github.com/julliatran/autoencoders/blob/master/vgg16.ipynb"
+                          rel="noopener noreferrer"
+                          target='blank'>GitHub</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
               </Card>
             </div>
-            
           </Cell>
           <Cell col={6}>
             <div className="project-grid">
@@ -97,11 +103,17 @@ class Project extends Component {
                 <img src={cnn} height='200px'/>
                 <CardText>
                   <h1><strong>CNN AutoEncoder</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                  <p>
+                    <li>Implemented and Tested using Keras</li>
+                    <li>Built the model to test on eddy currents dataset 
+                        for feature extractions</li>
+                  </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple 
+                          href="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
+                          rel="noopener noreferrer"
+                          target='blank'>GitHub</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -124,7 +136,7 @@ class Project extends Component {
                   <p>
                     <li>One of 10 projects that got chosen out of around 500 
                         projects</li>
-                    <li>Got showcased</li>
+                    <li>Showcased at Carnegie Mellon University 15-112 class</li>
                   </p>
                 </CardText>
                 <CardActions border>
@@ -143,15 +155,17 @@ class Project extends Component {
           <Cell col={6}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <CardTitle style={{color: '#fff', height: '200px', 
-                           background: 'url(https://www.mapsofworld.com/usa/usa-maps/united-states-map.jpg) center / cover'}}></CardTitle>
+                <img src={webs} height='200px'/>
                 <CardText>
                   <h1><strong>Webscraper</strong></h1>
-                  <p>aksjhdkjdfasdakjfhk</p>
+                  <p><strong>Python | BeautifulSoup4 | Pandas | JupyterNB</strong></p>
+                  <p>Webscrapes through city-data.com to collect data from cities in the US</p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
-                  <Button colored ripple>Learn More</Button>
+                  <Button colored ripple rel="noopener noreferrer" target='blank'
+                          href="https://github.com/julliatran/webscrapper/tree/master/Webscrapper">GitHub</Button>
+                  <Button colored ripple style={{textDecoration: 'none'}} 
+                          href="/webscraper">Learn More</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -177,7 +191,8 @@ class Project extends Component {
                   </p>
                 </CardText>
                 <CardActions border>
-                  <Button colored ripple>GitHub</Button>
+                  <Button colored ripple rel="noopener noreferrer" target='blank'
+                          href="https://github.com/julliatran/spaceY">GitHub</Button>
                   <Button colored ripple style={{textDecoration: 'none'}}
                           href="/spaceY">Learn More</Button>
                 </CardActions>
@@ -194,7 +209,7 @@ class Project extends Component {
   render() {
     return (
       <div className="category-tabs">
-        <Tabs style ={{background:"white"}} activeTab={this.state.activeTab} 
+        <Tabs style ={{background:"white", paddingLeft:"2em"}} activeTab={this.state.activeTab} 
                onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Competitions</Tab>
           <Tab>Machine Learning</Tab>

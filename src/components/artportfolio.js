@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, 
-         CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
+import { Grid, Cell  } from "react-mdl";
 import ava from "./img/art/avatar.jpg";
 import Gallery from 'react-grid-gallery';
 import p0 from "./img/art/0.jpg";

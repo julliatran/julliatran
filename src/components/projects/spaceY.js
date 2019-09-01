@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, 
-        CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
+import { Grid, Cell, Button } from "react-mdl";
 import Video from './video';
 import poster from "../img/spaceY/poster.jpg"
-//F77k1sSP7SM
+
 class SpaceY extends Component {
   render() {
     return (
@@ -12,11 +11,11 @@ class SpaceY extends Component {
           <Cell col={12} style={{textAlign:'center', margin: 'auto'}}>
             <h1><strong>SpaceY</strong></h1>
             <h3>Photon Particle IO | PIR Sensor | HTML </h3>
-            <div style={{margin: 'auto'}}>
-              <Video videoId='F77k1sSP7SM'/>
+            <div >
+              <Video style ={{width:"100%"}} videoId='F77k1sSP7SM'/>
             </div>
-            <div style={{paddingTop:'1em'}}>
-                <img style={{width:'900px'}} src = { poster }/></div>
+            <div style={{paddingTop:'1em'}} className="proj-img">
+                <img src = { poster }/></div>
             <p>We participated in the Meeting of the Minds at Carnegie Mellon
                 University in May 2019. It was a lot of fun to show case our 
                 project with the students and staffs who attended the event.
@@ -30,8 +29,7 @@ class SpaceY extends Component {
           <Button colored ripple 
                   style={{margin: 'auto', textDecoration: 'none'}}
                   rel="noopener noreferrer" target='blank'
-                  href="https://github.com/julliatran/spaceY">
-            Github</Button>
+                  href="https://github.com/julliatran/spaceY">Github</Button>
         </Grid>
       </div>
     )

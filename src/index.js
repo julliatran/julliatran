@@ -6,13 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
-import { ParallaxProvider } from 'react-scroll-parallax';
 ReactDOM.render(
-    <ParallaxProvider>
-        <BrowserRouter>
-        <App />
-        </BrowserRouter>
-    </ParallaxProvider>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
     , document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
