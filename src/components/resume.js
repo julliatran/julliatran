@@ -7,15 +7,15 @@ class Resume extends Component {
     return (
       <div> 
         <Grid>
-          <Cell col={4}>
+          <Cell col={4} offsetTablet={1}>
             <div style={{textAlign: 'center'}}>
               <img
                 src={avatar}
                 alt="avatar"
-                style={{height:'300px', padding:'0.5em'}}
+                style={{height:'400px', padding:'0.5em'}}
               />
             </div>
-            <div style={{padding:'2em'}}>
+            <div style={{paddingLeft:'1em'}}>
               <h2>Jullia Tran</h2>
               <hr style={{borderTop: '3px solid #178788', width:'60%'}}/>
               <h5>Address</h5>

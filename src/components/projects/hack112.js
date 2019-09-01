@@ -34,17 +34,21 @@ class Hack112 extends Component {
                a throw and so the ball would leave the player's hand in that 
                trajectory and fall down in a parabola path with acceleration.
             </p>
+            </Cell>
+            <Cell col={12}>
             <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
                          justifyContent:"space-between", textAlign:'center'}}>
               <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img style={{height:'250px', margin:'auto'}} src={body} ></img>
+                <img className="proj-img "style={{maxWidth:"450px", height:'250px', margin:'auto'}} src={body} ></img>
                 <figcaption>(Player's body matching)</figcaption>
               </figure>
               <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img style={{height:'250px', margin:'auto'}} src={throwing}></img>
+                <img className="proj-img" style={{maxWidth:"450px",height:'250px', margin:'auto'}} src={throwing}></img>
                 <figcaption>(Throwing ball)</figcaption>
               </figure>
             </div>
+            </Cell>
+            <Cell col={12}>
             <h3>Result</h3>
             <p>
               We were one of the 8 teams that won. Even though we didn't place
@@ -66,9 +70,9 @@ class Hack112 extends Component {
         </Grid>
         <Grid>
           <Button colored ripple
-                  style={{margin: 'auto', textDecoration: 'none'}} 
-                  href="/projects">Back</Button> 
-          <Button colored ripple 
+                  style={{margin: 'auto', textDecoration: 'none'}}
+                  href="/projects">Back</Button>
+          <Button colored ripple
                   style={{margin: 'auto', textDecoration: 'none'}}
                   rel="noopener noreferrer" target='blank'
                   href="https://github.com/julliatran/BasketballSimulator">

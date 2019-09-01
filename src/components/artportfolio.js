@@ -271,8 +271,8 @@ class Art extends Component {
     return (
       <div>
         <Grid>
-          <Cell col={3} className="left-col">
-            <figure className="ava"style={{width:"300px", textAlign:"center"}}>
+          <Cell col={3} offsetTablet={3} className="left-col">
+            <figure className="ava" style={{maxWidth:"300px", textAlign:"center"}}>
               <img src={ava} style={{height:"auto",width:"100%"}}/>
               <h3><strong>My Art Portfolio</strong></h3>
               <p>These are some of the artworks I've created over the years.</p>

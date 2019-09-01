@@ -16,7 +16,7 @@ class Project extends Component {
     if(this.state.activeTab === 0) {
       return (
         <Grid >
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <CardTitle style={{color: '#fff', height: '200px', 
@@ -42,7 +42,7 @@ class Project extends Component {
               </Card>
             </div>
           </Cell>
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={bball} height='200px'/>
@@ -73,7 +73,7 @@ class Project extends Component {
     else if(this.state.activeTab === 1) {
       return (
         <Grid>
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
                 <CardTitle style={{color: '#fff', height: '200px',
@@ -97,7 +97,7 @@ class Project extends Component {
               </Card>
             </div>
           </Cell>
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={cnn} height='200px'/>
@@ -126,7 +126,7 @@ class Project extends Component {
     else if(this.state.activeTab === 2) {
       return (
         <Grid>
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
                 <img src={RB} height='200px'/>
@@ -152,7 +152,7 @@ class Project extends Component {
             </div>
           </Cell>
           
-          <Cell col={6}>
+          <Cell col={6} offsetTablet={1}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
                 <img src={webs} height='200px'/>
