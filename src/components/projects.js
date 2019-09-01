@@ -159,7 +159,10 @@ class Project extends Component {
                 <CardText>
                   <h1><strong>Webscraper</strong></h1>
                   <p><strong>Python | BeautifulSoup4 | Pandas | JupyterNB</strong></p>
-                  <p>Webscrapes through city-data.com to collect data from cities in the US</p>
+                  <p>
+                    <li>Webscrapes through city-data.com to collect data from 
+                        almost 7000 cities in the US</li>
+                  </p>
                 </CardText>
                 <CardActions border>
                   <Button colored ripple rel="noopener noreferrer" target='blank'
