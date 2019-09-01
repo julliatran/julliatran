@@ -7,7 +7,7 @@ class Resume extends Component {
     return (
       <div> 
         <Grid>
-          <Cell col={4} offsetTablet={1}>
+          <Cell col={4} offsetTablet={1} offsetPhone={1}>
             <div style={{textAlign: 'center'}}>
               <img
                 src={avatar}
