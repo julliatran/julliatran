@@ -47,7 +47,11 @@ class Projects extends Component {
           <Cell col={1}></Cell>
         </Grid>
         <Grid>
-          <div className="proj-img" style={{textAlign:"center"}}><img style={{maxWidth:"600px", margin:"auto"}} src={vsc}/></div>
+        <Cell col={2}></Cell>
+          <Cell col={8}>
+            <Image src={vsc} fluid />
+          </Cell>
+          <Cell col={2}></Cell>
         </Grid>
       </div>
     );
