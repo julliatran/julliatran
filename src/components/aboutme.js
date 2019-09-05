@@ -10,8 +10,8 @@ class Projects extends Component {
       <div className="proj" style={{width: '80%', margin: 'auto'}}>
         <Grid></Grid>
         <Grid>
-          <Cell col={4}></Cell>
-          <Cell col={4}>
+          <Cell col={4} hidePhone={true}></Cell>
+          <Cell col={4} offsetTablet={2}>
             <Image src={coffee} fluid />
           </Cell>
           <Cell col={4}></Cell>

@@ -49,6 +49,7 @@ class Landing extends Component {
                 </div>
             </Cell>
         </Grid>
+        <Grid><Cell hideDesktop={true} hideTablet={true} style={{padding:'6em'}}></Cell></Grid>
         
       </div>
     );
