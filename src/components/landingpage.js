@@ -18,7 +18,7 @@ class Landing extends Component {
         
         <Grid className="landing-grid" style={{margin:"auto"}}>
             
-            <Cell col={4} offsetTablet={2} offsetPhone={1}>
+            <Cell col={4} offsetTablet={2}>
               <div className="proj-img">
                 <img src={background} style={{maxHeight: "330px"}}/>
               </div>

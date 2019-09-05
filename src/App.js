@@ -29,7 +29,7 @@ function App() {
       <Content>
         <div className="page-content" />
         <Main/>
-        <Footer className="footer" size="mega" style={{position:"relative"}}>
+        <Footer className="footer" size="mega" style={{margin:"auto", position:"relative"}}>
         <FooterSection type="middle">
           <FooterLinkList>
             <div style={{textAlign:'center'}}>

@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Image from 'react-bootstrap/Image';
 import coffee from './img/coffee.jpg';
 import vsc from './img/vsc.png';
+
 class Projects extends Component {
   render() {
     return (
       <div className="proj" style={{width: '80%', margin: 'auto'}}>
+        <Grid></Grid>
         <Grid>
-          <Cell col={12}>
-            <div className="proj-img" style={{textAlign:"center", margin:"auto"}}>
-              <img style={{ margin:"auto", display:"block",maxWidth:"300px"}} src={coffee}/></div>
+          <Cell col={4}></Cell>
+          <Cell col={4}>
+            <Image src={coffee} fluid />
           </Cell>
+          <Cell col={4}></Cell>
         </Grid>
         <Grid>
           <Cell col={1}></Cell>

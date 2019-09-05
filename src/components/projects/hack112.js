@@ -39,7 +39,7 @@ class Hack112 extends Component {
             <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
                          justifyContent:"space-between", textAlign:'center'}}>
               <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img className="proj-img "style={{maxWidth:"450px", height:'250px', margin:'auto'}} src={body} ></img>
+                <img className="proj-img "style={{maxWidth:"450px",  margin:'auto'}} src={body} ></img>
                 <figcaption>(Player's body matching)</figcaption>
               </figure>
               <figure style={{fontStyle:'italic', color:'#447374'}}>
