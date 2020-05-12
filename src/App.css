@@ -1,0 +1,203 @@
+/* LANDING PAGE */
+
+@keyframes Transistion { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.header-color {
+  background: linear-gradient(270deg, #22c1c3, #fdbb2d);
+  background-size: 600% 600%;
+  animation: Transistion 6s ease infinite;
+}
+
+.header-color :hover {
+  color: #178788;
+}
+@media only screen and (max-width: 1440px) {
+  .landing-page {
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .landing-page {
+    padding-bottom: 38%;
+    padding-top: 38%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .landing-page {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}
+.landing-page {
+  background-image: url('./components/img/clouds.JPG');
+  background-size: cover;
+}
+
+.landing-grid {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+ 
+  /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
+  background-size: 600% 600%;
+
+  animation: Transistion 6s ease infinite;*/
+
+}
+
+.proj-img {
+  display:flex;
+}
+.proj-img img {
+  width:100%;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  padding-top: 10%;
+  padding-bottom:10%;
+  margin: auto;
+  text-align: center;
+  width:100%;
+}
+
+.banner-text h1 {
+  font-size:500%;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white; 
+  font-size: 120%;
+  padding: 1em;
+  margin: auto;
+}
+
+.social-links {
+  display: block;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px; 
+}
+
+/* PROJECTS PAGE */
+.content {
+  padding-top: 3em;
+}
+.category-tabs {
+  color: black;
+  background-image: url('./components/img/clouds.JPG');
+  background-size: cover;
+  padding-bottom: 7em;
+}
+.category-tabs h1 {
+  color: black;
+  margin: auto;
+  position: flex;
+}
+
+.project-grid {
+  display: flex;
+}
+
+.project-grid h1 {
+  font-size: 2em;
+}
+
+/* CONTACT PAGE */
+.contact-body {
+  margin: auto;
+  background: grey;
+  position: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 2px solid teal;
+  margin-bottom: 20px;
+}
+
+/* Resume Page */
+.resume-right-col {
+  background: #27221F;
+  opacity: 0.8;
+  color: white;
+  padding: 2em;
+
+}
+/* Projects Inner Pages Style */
+.proj h1 {
+  color: #447374;
+}
+.proj h3 {
+  font-size: 3em;
+  color: #447374;
+}
+.proj p {
+  font-size: 1.2em;
+}
+
+/*Art Portfolio*/
+.left-col {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top:10%;
+  background: rgba(114, 186, 94, 0.3);
+}
+.ava {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+}
+
+/*Footer*/
+.footer {
+  justify-content: space-between;
+  position: relative;
+  bottom: 0px;
+}
+.footer p {
+  font-size: 1.3em;
+  margin-top: 1em;
+  color: white;
+}
+.footer h4 {
+  color:white;
+}
+.footer-social-links i{
+  font-size: 2em;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white
+}
+
