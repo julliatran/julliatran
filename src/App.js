@@ -34,7 +34,7 @@ function App() {
           <FooterLinkList>
             <div style={{textAlign:'center'}}>
               <p><strong>Contact me here!</strong></p>
-              <h4><strong>tranjullia@gmail.com</strong></h4>
+              <h4><strong><a href="mailto:tranjullia@gmail.com">tranjullia@gmail.com</a></strong></h4>
             </div>
             <div style={{textAlign:'center'}} className="footer-social-links">
                   {/* LinkedIn */}
