@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import cloud from "./img/clouds.JPG";
 import background from "./img/background.JPG";
 
 {/*<Cell col={4} style={{padding: "2em", 
@@ -11,8 +10,7 @@ import background from "./img/background.JPG";
 class Landing extends Component {
   render() {
     return (
-      <div className="landing-page">
-        
+      <div className="landing-page">     
         {/*<Grid className="landing-grid" style={{margin:"auto"}}>
             <Cell offsetTablet={2} offsetDesktop={4}>
               <div className="proj-img">
@@ -57,7 +55,6 @@ class Landing extends Component {
           </Cell>
         </Grid>
         {/*<Grid><Cell hideDesktop={true} hideTablet={true} style={{padding:'6em'}}></Cell></Grid>*/}
-        
       </div>
     );
   }
