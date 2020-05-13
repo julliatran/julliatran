@@ -24,34 +24,34 @@ class Landing extends Component {
                    backgroundSize: "cover",
                    width: '100%', left:"0px", right:"0px", margin:"auto", textAlign:"center"}}*/}
         <Grid style={{margin:"auto"}} className="landing-grid">
-          <Cell col={5} offsetTablet={1}>
+          <Cell col={6}>
             <div className="proj-img">
-                <img src={background} />
+                <img src={background}/>
             </div>
           </Cell>
-          <Cell col={7}>
+          <Cell col={6}>
             <div className="banner-text">
-                  <h1>I'm Jullia Tran</h1>
-                  <hr/>
-                  <p>Python | C | Machine Learning | HTML/CSS | React </p>
-                  <div className="social-links">
-                    {/* LinkedIn */}
-                    <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
-                      rel="noopener noreferrer" target="_blank">
-                      <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                    </a>
-                    {/* Github */}
-                    <a href="https://github.com/julliatran" 
-                      rel="noopener noreferrer" target="_blank">
-                      <i className="fa fa-github-square" aria-hidden="true"/>
-                    </a>
-                    {/* YouTube */}
-                    <a href="https://www.youtube.com/channel/UCAJyvelCfya76Nk0VLQvWYA?view_as=subscriber"
-                      rel="noopener noreferrer" target="_blank">
-                      <i className="fa fa-youtube-square" aria-hidden="true"/>
-                    </a>
-                  </div>
-                </div>
+              <h1>I'm Jullia Tran</h1>
+              <hr/>
+              <p>Python | C | Machine Learning | HTML/CSS | React </p>
+              <h1>
+                {/* LinkedIn */}
+                <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
+                  rel="noopener noreferrer" target="_blank">
+                  <i className="fa fa-linkedin-square" aria-hidden="true"/>
+                </a>
+                {/* Github */}
+                <a href="https://github.com/julliatran" 
+                  rel="noopener noreferrer" target="_blank">
+                  <i className="fa fa-github-square" aria-hidden="true"/>
+                </a>
+                {/* YouTube */}
+                <a href="https://www.youtube.com/channel/UCAJyvelCfya76Nk0VLQvWYA?view_as=subscriber"
+                  rel="noopener noreferrer" target="_blank">
+                  <i className="fa fa-youtube-square" aria-hidden="true"/>
+                </a>
+                </h1>
+            </div>
           </Cell>
         </Grid>
         {/*<Grid><Cell hideDesktop={true} hideTablet={true} style={{padding:'6em'}}></Cell></Grid>*/}
