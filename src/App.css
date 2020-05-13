@@ -15,7 +15,7 @@
 .header-color :hover {
   color: #178788;
 }
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
   .landing-page {
     padding-bottom: 7%;
     padding-top: 7%;
@@ -32,51 +32,62 @@
     padding-bottom: 2em;
     padding-top: 2em;
   }
-}
+} */
 .landing-page {
   background-image: url('./components/img/clouds.JPG');
   background-size: cover;
+  height: 80vh;
+  margin: 0;
+  display: flex;
 }
 
 .landing-grid {
-  text-align: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 0.5em;
- 
+  margin: auto;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
   /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
   background-size: 600% 600%;
 
   animation: Transistion 6s ease infinite;*/
+}
 
+.page-content {
+  height: 100%;
+  width: 100%;
 }
 
 .proj-img {
-  display:flex;
-  margin: auto;
+  white-space: nowrap;
+  text-align: center; margin: 3em 0;
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .proj-img img {
-  height: 30vw;
-  width: auto;
-  margin: auto;
+  width:100%;
+  vertical-align: middle;
 }
 
 .banner-text {
   background-color: black;
   opacity: .8;
   margin: auto;
-  width: 40vw;
-  height: 30vw;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  justify-content: center;
   display:table;
+  padding: 1rem;
 }
 
 .banner-text h1 {
-  font-size: 5vw;
+  font-size: 4.2rem;
   font-weight: bold;
   color: white;
-  
+
 }
 
 .banner-text hr {
@@ -87,12 +98,12 @@
 
 .banner-text p {
   color: white; 
-  font-size: 1.5vw;
+  font-size: 1.3rem;
 }
 
 .banner-text i {
   color: white;
-  font-size: 5.5vw;
+  font-size: 1em;
   padding-left: 1vw;
   padding-right: 1vw;
 }

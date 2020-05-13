@@ -24,12 +24,14 @@ class Landing extends Component {
                    backgroundSize: "cover",
                    width: '100%', left:"0px", right:"0px", margin:"auto", textAlign:"center"}}*/}
         <Grid style={{margin:"auto"}} className="landing-grid">
-          <Cell col={6}>
+          <Cell col={4}>
             <div className="proj-img">
-                <img src={background}/>
+              <span className="helper"></span>
+              <img src={background}/>
             </div>
+              
           </Cell>
-          <Cell col={6}>
+          <Cell col={8}>
             <div className="banner-text">
               <h1>I'm Jullia Tran</h1>
               <hr/>
