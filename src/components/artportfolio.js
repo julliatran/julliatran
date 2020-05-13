@@ -269,7 +269,7 @@ const hover = IMAGES.map(i => { i.customOverlay = (<div style={captionStyle}>
 class Art extends Component {
   render() {
     return (
-      <div>
+      <div className="proj">
         <Grid>
           <Cell col={3} offsetTablet={2} offsetPhone={1} className="left-col">
             <figure className="ava" style={{maxWidth:"300px", textAlign:"center"}}>

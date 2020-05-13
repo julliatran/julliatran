@@ -7,7 +7,7 @@ import vsc from './img/vsc.png';
 class Projects extends Component {
   render() {
     return (
-      <div className="proj" style={{width: '80%', margin: 'auto'}}>
+      <div className="proj">
         <Grid></Grid>
         <Grid>
           <Cell col={4} hidePhone={true}></Cell>

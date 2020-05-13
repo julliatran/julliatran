@@ -75,12 +75,16 @@ html, body {
   display:table;
   padding: 1rem;
 }
-
+.v-align {
+  padding: 1rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 .banner-text h1 {
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: white;
-
 }
 
 .banner-text hr {
@@ -91,7 +95,7 @@ html, body {
 
 .banner-text p {
   color: white; 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .banner-text i {
@@ -109,7 +113,9 @@ html, body {
   color: black;
   background-image: url('./components/img/clouds.JPG');
   background-size: cover;
-  padding-bottom: 7em;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
 }
 .category-tabs h1 {
   color: black;
@@ -155,6 +161,13 @@ html, body {
 
 }
 /* Projects Inner Pages Style */
+.proj{
+  background-color: white;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+}
 .proj h1 {
   color: #447374;
 }
