@@ -13,7 +13,7 @@ class Projects extends Component {
           <Cell col={12} >
             <div style={{display:"flex"}}>
               <span className="helper"></span>
-              <img src={coffee} />
+              <img src={coffee} style={{marginLeft:"auto", marginRight:"auto", height:"40vh", width:"auto"}} />
             </div>
           </Cell>
         </Grid>
@@ -49,7 +49,7 @@ class Projects extends Component {
           <Cell col={12}>
             <div style={{display:"flex"}}>
               <span className="helper"></span>
-              <img src={vsc} fluid />
+              <img src={vsc} style={{marginLeft:"auto", marginRight:"auto", height:"40vh", width:"auto"}} fluid />
             </div>
           </Cell>
         </Grid>

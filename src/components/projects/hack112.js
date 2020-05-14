@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, 
         CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
-import Video from './video';
 import throwing from '../img/hack112/throwing.gif';
 import body from '../img/hack112/body.gif';
 import team from '../img/hack112/team.JPG';
@@ -9,13 +8,19 @@ import team from '../img/hack112/team.JPG';
 class Hack112 extends Component {
   render() {
     return (
-      <div className="proj" style={{width: '80%', margin: 'auto'}}>
+      <div className="proj">
+        <div style={{width:"80%", margin:"auto"}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center'}}>
             <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
             <h3><strong>Python | PyGame | PyKinnect</strong></h3>
-            <div style={{margin: 'auto'}}>
-              <Video videoId='sthsFyCTXCs'/>
+            <div style={{margin:"auto", width: '80%'}}>
+               <div className="res-hiframe">
+                <img class="ratio" src="http://placehold.it/90x60"/>
+               <iframe src='https://www.youtube.com/embed/sthsFyCTXCs'
+                frameBorder='0' allow='autoplay; encrypted-media'
+                allowFullScreen title='video'/>
+                </div>
             </div>
           </Cell>
         </Grid>
@@ -35,16 +40,27 @@ class Hack112 extends Component {
                trajectory and fall down in a parabola path with acceleration.
             </p>
             </Cell>
-            <Cell col={12}>
+            <Cell col={6}>
             <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
                          justifyContent:"space-between", textAlign:'center'}}>
-              <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img className="proj-img "style={{maxWidth:"450px",  margin:'auto'}} src={body} ></img>
-                <figcaption>(Player's body matching)</figcaption>
+              <figure style={{fontStyle:'italic', color:"black"}}>
+                <div className="proj-img">
+                <span className="helper"></span>
+                <img src={body} ></img>
+                </div>
+                <figcaption style={{fontSize:"1.3em"}}>(Player's body matching)</figcaption>
               </figure>
-              <figure style={{fontStyle:'italic', color:'#447374'}}>
-                <img className="proj-img" style={{maxWidth:"450px",height:'250px', margin:'auto'}} src={throwing}></img>
-                <figcaption>(Throwing ball)</figcaption>
+              </div>
+              </Cell>
+              <Cell col={6}>
+              <div style={{display:'flex', margin:'auto', flexWrap: 'wrap', 
+                         justifyContent:"space-between", textAlign:'center'}}>
+              <figure style={{fontStyle:'italic',  color:"black"}}>
+              <div className="proj-img">
+                <span className="helper"></span>
+                <img src={throwing}></img>
+                </div>
+                <figcaption style={{fontSize:"1.3em"}}>(Throwing ball)</figcaption>
               </figure>
             </div>
             </Cell>
@@ -58,9 +74,9 @@ class Hack112 extends Component {
             <p>Below is a picture of my team smiling, prize in hand: 
             </p>
             <div>
-              <figure style={{textAlign:'center', fontStyle:'italic', color:'#447374'}}>
+              <figure style={{textAlign:'center', fontStyle:'italic', color:'black'}}>
                 <div className="proj-img"><img src={team}></img></div>
-                <figcaption>
+                <figcaption style={{fontSize:"1.3em"}}>
                   (From left to right: Vikram Bhat, Daniel Cohen, Jullia Tran -
                   me, and Diva Marty)
                 </figcaption>
@@ -69,15 +85,15 @@ class Hack112 extends Component {
           </Cell>
         </Grid>
         <Grid>
-          <Button colored ripple
-                  style={{margin: 'auto', textDecoration: 'none'}}
-                  href="/projects">Back</Button>
-          <Button colored ripple
-                  style={{margin: 'auto', textDecoration: 'none'}}
-                  rel="noopener noreferrer" target='blank'
-                  href="https://github.com/julliatran/BasketballSimulator">
-            Github</Button>
+          <Button style={{margin:'auto', textDecoration: 'none', color:"black"}} 
+                    href="/projects"><p>Back</p></Button> 
+            <Button colored ripple 
+                    style={{margin: 'auto', textDecoration: 'none', color:"black"}}
+                    rel="noopener noreferrer" target='blank'
+                    href="https://github.com/julliatran/BasketballSimulator">
+                      <p>Github</p></Button>
         </Grid>
+        </div>
       </div>
     );
   }

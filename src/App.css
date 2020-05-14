@@ -177,31 +177,35 @@ html, body {
 /* Projects Inner Pages Style */
 
 .proj{
-  color: black;
+  margin: auto;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
   background-image: url('./components/img/clouds.JPG');
   background-size: cover;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: middle;
-}
-.proj img {
-  margin-left: auto;
-  margin-right: auto;
-  height:40vh;
 }
 
 .proj h1 {
-  color: #447374;
+  color: teal;
+  font-size: 3em;
 }
 .proj h3 {
-  font-size: 3em;
-  color: #447374;
+  font-size: 2em;
+  color: teal;
 }
 .proj p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+.proj figure {
+  float: 'right';
+  margin: '0px 0px 15px 15px';
+  font-style:'italic';
+  text-align:'center';
+  color:'#447374';
 }
 
+.proj figcaption {
+}
 /*Art Portfolio*/
 .left-col {
   display: flex;

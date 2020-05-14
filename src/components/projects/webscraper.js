@@ -4,7 +4,8 @@ import webs from  '../img/webs/citydata.png';
 class Webscraper extends Component {
   render() {
     return (
-      <div className="proj" style={{width: '80%', margin: 'auto'}}>
+      <div className="proj">
+        <div style={{width:"80%", margin:"auto"}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center', margin: 'auto'}}>
             <h1><strong>Webscraper</strong></h1>
@@ -44,14 +45,15 @@ class Webscraper extends Component {
         </Grid>
         <Grid>
           <Button colored ripple
-                  style={{margin: 'auto', textDecoration: 'none'}} 
+                  style={{margin:'auto', textDecoration:'none', color:"black"}} 
                   href="/projects">Back</Button> 
           <Button colored ripple 
-                  style={{margin: 'auto', textDecoration: 'none'}}
+                  style={{margin:'auto', textDecoration:'none', color:"black"}}
                   rel="noopener noreferrer" target='blank'
                   href="https://github.com/julliatran/webscrapper/tree/master/Webscrapper">
             Github</Button>
         </Grid>
+      </div>
       </div>
     );
   }
