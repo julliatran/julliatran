@@ -26,7 +26,7 @@ function App() {
           <Link style={{textDecoration:'none'}} to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
         </Navigation>
       </Drawer>
-      <Content className="page-content">
+      <Content>
           <Main></Main>
       </Content>
       <Footer className="footer" size="mega">

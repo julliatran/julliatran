@@ -291,13 +291,9 @@ class Art extends Component {
             </div>
           </Cell>
         </Grid>
-        
       </div>
-      
     );
   }
 }
-
-
 
 export default Art;

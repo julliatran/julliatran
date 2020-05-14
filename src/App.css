@@ -1,10 +1,11 @@
 html, body {
-  margin: 0;
+  margin:0;
   height: 100%;
+  
 }
 .page-content {
   height: 100%;
-  width: 100%;
+  width:100%;
 }
 /* LANDING PAGE */
 
@@ -41,6 +42,7 @@ html, body {
   vertical-align: middle;
   justify-content: center;
   height:100%;
+  
   /*background: linear-gradient(270deg, #22c1c3, #fdbb2d);
   background-size: 600% 600%;
 
@@ -113,6 +115,7 @@ html, body {
   min-height: 100%;
   width: 100%;
   position: absolute;
+  left: 0;
 }
 .category-tabs h1 {
   color: black;
@@ -158,13 +161,22 @@ html, body {
 
 }
 /* Projects Inner Pages Style */
+
 .proj{
-  background-color: white;
+  color: black;
+  background-image: url('./components/img/clouds.JPG');
   background-size: cover;
   min-height: 100%;
   width: 100%;
-  position: absolute;
+  display: flex;
+  justify-content: middle;
 }
+.proj img {
+  margin-left: auto;
+  margin-right: auto;
+  height:40vh;
+}
+
 .proj h1 {
   color: #447374;
 }

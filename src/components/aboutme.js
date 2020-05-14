@@ -8,17 +8,17 @@ class Projects extends Component {
   render() {
     return (
       <div className="proj">
-        <Grid></Grid>
-        <Grid>
-          <Cell col={4} hidePhone={true}></Cell>
-          <Cell col={4} offsetTablet={2}>
-            <Image src={coffee} fluid />
+        <div style={{width:"80%", margin:"auto"}}>
+        <Grid >
+          <Cell col={12} >
+            <div style={{display:"flex"}}>
+              <span className="helper"></span>
+              <img src={coffee} />
+            </div>
           </Cell>
-          <Cell col={4}></Cell>
         </Grid>
-        <Grid>
-          <Cell col={1}></Cell>
-          <Cell col={10}>
+        <Grid className="landing-grid">
+          <Cell col={12}>
             <h1><strong>Hello! I'm Jullia Tran.</strong></h1>
             <p>I'm from Ho Chi Minh City, Vietnam, and I'm currently a sophomore
               at Carnegie Mellon University studying Electrical and Computer
@@ -44,16 +44,17 @@ class Projects extends Component {
               difficult in Sublime.
             </p>
           </Cell>
-          <Cell col={1}></Cell>
         </Grid>
         <Grid>
-        <Cell col={2}></Cell>
-          <Cell col={8}>
-            <Image src={vsc} fluid />
+          <Cell col={12}>
+            <div style={{display:"flex"}}>
+              <span className="helper"></span>
+              <img src={vsc} fluid />
+            </div>
           </Cell>
-          <Cell col={2}></Cell>
         </Grid>
-      </div>
+        </div>
+        </div>
     );
   }
 }
