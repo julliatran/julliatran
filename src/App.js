@@ -26,10 +26,9 @@ function App() {
           <Link style={{textDecoration:'none'}} to="/artportfolio"><strong>ART PORTFOLIO</strong></Link>
         </Navigation>
       </Drawer>
-      <Content>
+      <Content className="page-content">
           <Main></Main>
-      </Content>
-      <Footer className="footer" size="mega">
+          <Footer className="footer" size="mega">
         <FooterSection type="middle">
           <FooterLinkList>
             <div style={{textAlign:'center'}}>
@@ -56,6 +55,8 @@ function App() {
           </FooterLinkList>
         </FooterSection>
       </Footer>
+      </Content>
+      
     </Layout>
   </div>
   );
