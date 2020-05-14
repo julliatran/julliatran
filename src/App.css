@@ -148,13 +148,32 @@ html, body {
 }
 
 /* Resume Page */
-.resume-right-col {
+.res-right-col {
   background: #27221F;
   opacity: 0.8;
   color: white;
   padding: 2em;
-
+  width:80%;
+  height:100%;
+  margin:0 auto;
 }
+.res-hiframe {
+  position:relative;
+}
+.res-hiframe .ratio {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.res-hiframe iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
 /* Projects Inner Pages Style */
 
 .proj{

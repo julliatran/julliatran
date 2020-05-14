@@ -7,17 +7,14 @@ class Resume extends Component {
     return (
       <div> 
         <Grid>
-          <Cell col={4} offsetTablet={1} offsetPhone={1}>
-            <div style={{textAlign: 'center'}}>
-              <img
-                src={avatar}
-                alt="avatar"
-                style={{height:'400px', padding:'0.5em'}}
-              />
-            </div>
-            <div style={{paddingLeft:'1em'}}>
+          <Cell col={4}>
+            <div className="proj-img">
+              <span className="helper"></span>
+              <img src={avatar}/>
+            
+            <div>
               <h2>Jullia Tran</h2>
-              <hr style={{borderTop: '3px solid #178788', width:'60%'}}/>
+              <hr style={{borderTop: '3px solid #178788', width:'60%', margin:"auto"}}/>
               <h5>Address</h5>
               <p>5000 Forbes Ave,</p>
               <p>Pittsburgh, PA 15213</p>
@@ -25,9 +22,13 @@ class Resume extends Component {
               <h5>Email</h5>
               <p>tranjullia@gmail.com</p>
             </div>
+            </div>
           </Cell>
-          <Cell className="resume-right-col" col={8}>
-          <iframe className="proj-img" src="https://drive.google.com/file/d/18EOR70T0fWN2e8UnoS7bZXZfuofxZ7db/preview" width="640" height="480"></iframe>
+          <Cell className="res-right-col" col={8}>
+              <div className="res-hiframe">
+                <img class="ratio" src="http://placehold.it/17x22"/>
+                <iframe src="https://drive.google.com/file/d/18EOR70T0fWN2e8UnoS7bZXZfuofxZ7db/preview" width="auto" height="100%"></iframe>
+            </div>
           </Cell>
         </Grid>
       </div>
