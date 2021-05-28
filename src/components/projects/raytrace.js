@@ -27,7 +27,7 @@ class Webscraper extends Component {
         <div style={{width:"80%", margin:"auto"}}>
         <Grid>
           <Cell col={12} style={{textAlign:'center', margin: 'auto'}}>
-            <h1><strong>Raytracing</strong></h1>
+            <h1><strong>Scotty3d</strong></h1>
             <h3>Computer Graphics | C++</h3>
             <div style={{margin:"auto", width: '70vw', maxWidth: '800px'}}>
               <div className="res-hiframe">

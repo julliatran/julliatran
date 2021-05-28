@@ -5,6 +5,7 @@ import cnn from './img/cnn.png';
 import spaceY from './img/spaceY.png';
 import bball from './img/bball.png';
 import webs from './img/webs/citydata.png';
+import dragon from './img/rt/dragon.png';
 
 const CellElem = props => 
     <Cell col={props.cellSz} offsetTablet={1}>
@@ -49,7 +50,7 @@ class Project extends Component {
         <Grid>
           {/* TODO: change this content */}
           <CellElem cellSz = "4"
-                    titleBg="https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png"
+                    titleBg={dragon}
                     title ="Ray Tracer"
                     langs = "C++ | Computer Graphics"
                     bullets={["Implemented a modern package for 3D modeling, rendering, and animation similar to 3D tools Maya and Blender", "Developed an efficient implementation of ray-scene geometry queries with multi-bounce light and environmental light support"]}
@@ -74,48 +75,8 @@ class Project extends Component {
 
         </Grid>
       )}
-    /* COMPETITIONS */
-    else if(this.state.activeTab === 1) {
-      return (
-        <Grid >
-          <CellElem cellSz = "6"
-                    titleBg="https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg" 
-                    title ="AngelHack Vietnam 2019"
-                    langs="NodeJS | HTML/CSS | C++"
-                    bullets={["Finalist/Second place in the FE Credit Challenge", "Created a software customer service solution"]}
-                    githubLink="https://github.com/julliatran/AngelHack2019"
-                    detailsLink="angelHack"/>
-          <CellElem cellSz = "6"
-                    titleBg={bball} 
-                    title ="Hack 112 - Basketball Simulator"
-                    langs="Python | PyGame | PyKinnect"
-                    bullets={["Won 'Most Ambitious Project'", "Top 8 out of around 50 teams"]}
-                    githubLink="https://github.com/julliatran/BasketballSimulator"
-                    detailsLink="hack112"/>
-        
-        </Grid>                  
-      )}
-    // MACHINE LEARNING
-    else if(this.state.activeTab === 2) {
-      return (
-        <Grid >
-          <CellElem cellSz = "6"
-                    titleBg="https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png"
-                    title ="VGG16 AutoEncoder"
-                    bullets={["Implemented and tested using Keras", "Used pretrained VGG16 model and built a decoder to test on eddy currents dataset for feature extractions"]}
-                    githubLink="https://github.com/julliatran/autoencoders/blob/master/vgg16.ipynb"
-                    />
-          <CellElem cellSz = "6"
-                    titleBg={cnn}
-                    title ="CNN AutoEncoder"
-                    bullets={["Implemented and tested using Keras", "Built the model to test on eddy currents dataset for feature extractions"]}
-                    githubLink="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
-                    />
-        </Grid>
-      )}
-    
     // Hardware
-    else if(this.state.activeTab === 3) {
+    else if(this.state.activeTab === 1) {
       return (
         
         <Grid>
@@ -145,6 +106,47 @@ class Project extends Component {
         </Grid>
       )
     }
+    /* COMPETITIONS */
+    else if(this.state.activeTab === 2) {
+      return (
+        <Grid >
+          <CellElem cellSz = "6"
+                    titleBg="https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg" 
+                    title ="AngelHack Vietnam 2019"
+                    langs="NodeJS | HTML/CSS | C++"
+                    bullets={["Finalist/Second place in the FE Credit Challenge", "Created a software customer service solution"]}
+                    githubLink="https://github.com/julliatran/AngelHack2019"
+                    detailsLink="angelHack"/>
+          <CellElem cellSz = "6"
+                    titleBg={bball} 
+                    title ="Hack 112 - Basketball Simulator"
+                    langs="Python | PyGame | PyKinnect"
+                    bullets={["Won 'Most Ambitious Project'", "Top 8 out of around 50 teams"]}
+                    githubLink="https://github.com/julliatran/BasketballSimulator"
+                    detailsLink="hack112"/>
+        
+        </Grid>                  
+      )}
+    // MACHINE LEARNING
+    else if(this.state.activeTab === 3) {
+      return (
+        <Grid >
+          <CellElem cellSz = "6"
+                    titleBg="https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png"
+                    title ="VGG16 AutoEncoder"
+                    bullets={["Implemented and tested using Keras", "Used pretrained VGG16 model and built a decoder to test on eddy currents dataset for feature extractions"]}
+                    githubLink="https://github.com/julliatran/autoencoders/blob/master/vgg16.ipynb"
+                    />
+          <CellElem cellSz = "6"
+                    titleBg={cnn}
+                    title ="CNN AutoEncoder"
+                    bullets={["Implemented and tested using Keras", "Built the model to test on eddy currents dataset for feature extractions"]}
+                    githubLink="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
+                    />
+        </Grid>
+      )}
+    
+    
   }
 
   render() {
@@ -153,9 +155,9 @@ class Project extends Component {
         <Tabs style ={{background:"white", paddingLeft:"6%"}} activeTab={this.state.activeTab} 
                onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>.py/C++</Tab>
+          <Tab>Hardware</Tab>
           <Tab>Hacks</Tab>
           <Tab>ML</Tab>
-          <Tab>Hardware</Tab>
         </Tabs>  
         <div className="content">{this.toggleCategories()}</div>
       </div>
