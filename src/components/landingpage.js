@@ -10,7 +10,7 @@ class Landing extends Component {
           <Cell col={4}>
             <div className="proj-img">
               <span className="helper"></span>
-              <img src={background}/>
+              <img src={background} alt="background"/>
             </div>
               
           </Cell>

@@ -14,14 +14,14 @@ class SpaceY extends Component {
             <div style={{margin:"auto", width: '70%'}}>
                {/* <Video videoId='sthsFyCTXCs'/> */}
                <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60"/>
+                <img class="ratio" src="http://placehold.it/90x60" alt="ratio for iframe"/>
                <iframe src='https://www.youtube.com/embed/F77k1sSP7SM'
                 frameBorder='0' allow='autoplay; encrypted-media'
                 allowFullScreen title='video'/>
                 </div>
             </div>
             <div style={{paddingTop:'1em'}} className="proj-img">
-                <img src = { poster }/></div>
+                <img src = { poster } alt="poster"/></div>
           </Cell>
         </Grid>
         <Grid>

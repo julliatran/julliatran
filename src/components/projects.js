@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu } from "react-mdl";
 import RB from './img/rubikspaint.png';
 import cnn from './img/cnn.png';
 import spaceY from './img/spaceY.png';
@@ -83,7 +83,7 @@ class Project extends Component {
           <Cell col={12}>
             <div className="project-grid">
               <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <img src={spaceY} height='200px'/>
+                <img src={spaceY} height='200px' alt="spaceY"/>
                 <CardText>
                   <h1><strong>SpaceY</strong></h1>
                   <p><strong>Photon Particle IO | PIR Sensor | HTML</strong></p>

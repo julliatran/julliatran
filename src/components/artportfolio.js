@@ -33,20 +33,6 @@ import p27 from "./img/art/27.jpg";
 import p28 from "./img/art/28.jpg";
 import p29 from "./img/art/29.jpg";
 
-
-const captionStyle = {
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
-  maxHeight: "240px",
-  overflow: "hidden",
-  position: "absolute",
-  bottom: "0",
-  width: "100%",
-  color: "white",
-  padding: "2px",
-  fontSize: "150%",
-  textAlign:"center",
-};
-
 const IMAGES =
 [{
   src: p0,
@@ -260,11 +246,6 @@ const IMAGES =
   caption: "Fear - Printmaking"
 }
 ]
-{/* Hover */}
-const hover = IMAGES.map(i => { i.customOverlay = (<div style={captionStyle}>
-                                                   <div>{i.caption}</div>
-                                                   </div>);
-                         return i });
 
 class Art extends Component {
   render() {
@@ -273,7 +254,7 @@ class Art extends Component {
         <Grid>
           <Cell col={3} offsetTablet={2} offsetPhone={1} className="left-col">
             <figure className="ava" style={{maxWidth:"300px", textAlign:"center"}}>
-              <img src={ava} style={{height:"auto",width:"100%"}}/>
+              <img src={ava} style={{height:"auto",width:"100%"}} alt="avatar"/>
               <h3><strong>My Art Portfolio</strong></h3>
               <p>These are some of the artworks I've created over the years.</p>
               <h3>✿✿✿</h3>

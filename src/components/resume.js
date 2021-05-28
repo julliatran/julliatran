@@ -10,7 +10,7 @@ class Resume extends Component {
           <Cell col={4}>
             <div className="proj-img">
               <span className="helper"></span>
-              <img src={avatar}/>
+              <img src={avatar} alt="avatar"/>
             
             <div>
               <h2>Jullia Tran</h2>
@@ -26,8 +26,8 @@ class Resume extends Component {
           </Cell>
           <Cell className="res-right-col" col={8}>
               <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/17x22"/>
-                <iframe src="https://drive.google.com/file/d/18EOR70T0fWN2e8UnoS7bZXZfuofxZ7db/preview" width="auto" height="100%"></iframe>
+                <img class="ratio" src="http://placehold.it/17x22" alt="iframe placeholder"/>
+                <iframe title="Resume pdf" src="https://drive.google.com/file/d/18EOR70T0fWN2e8UnoS7bZXZfuofxZ7db/preview" width="auto" height="100%"></iframe>
             </div>
           </Cell>
         </Grid>

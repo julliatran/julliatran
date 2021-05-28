@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Image from 'react-bootstrap/Image';
 import coffee from './img/coffee.jpg';
 import vsc from './img/vsc.png';
 
@@ -13,7 +12,7 @@ class Projects extends Component {
           <Cell col={12}>
             <div className="proj-img">
               <span className="helper"></span>
-              <img src={coffee}/>
+              <img src={coffee} alt="profile"/>
             </div>
           </Cell>
         </Grid>
@@ -49,7 +48,7 @@ class Projects extends Component {
           <Cell col={12}>
           <div className="proj-img">
               <span className="helper"></span>
-              <img src={vsc}/>
+              <img src={vsc} alt="code of the website"/>
             </div>
           </Cell>
         </Grid>

@@ -20,7 +20,7 @@ class Rubiks extends Component {
             <h3><strong>Python | Panda3D | NumPy | SciPy</strong></h3>
             <div style={{margin:"auto", width: '70vw'}}>
               <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60"/>
+                <img class="ratio" src="http://placehold.it/90x60" alt="ratio placeholder"/>
                 <iframe src='https://www.youtube.com/embed/WErlUYfhH-k'
                  frameBorder='0' allow='autoplay; encrypted-media'
                  allowFullScreen title='video'/>
@@ -32,7 +32,7 @@ class Rubiks extends Component {
           <Cell col={4} style={{justifyContent: "center"}}>
             <div style={{margin:"auto", height: '40%'}}>
               <div className="res-hiframe" style={{top:"70%"}}>
-                <img class="ratio" src="http://placehold.it/90x60"/>
+                <img class="ratio" alt="ratio placeholder" src="http://placehold.it/90x60"/>
                 <iframe src='https://www.youtube.com/embed/oApRG1qsmDA'
                  frameBorder='0' allow='autoplay; encrypted-media'
                  allowFullScreen title='video'/>
@@ -70,13 +70,13 @@ class Rubiks extends Component {
               <Cell col={6}>
                 <div className="proj-img">
                   <span className="helper"></span>
-                  <img src={select} ></img>
+                  <img alt="selecting" src={select} ></img>
                 </div>
               </Cell>
               <Cell col={6}>
               <div className="proj-img">
                 <span className="helper"></span>
-                <img src={rotate} ></img>
+                <img alt="rotating" src={rotate} ></img>
               </div>
               </Cell>
               </Grid>
@@ -113,31 +113,31 @@ class Rubiks extends Component {
                                      
           <Cell col={4}>
             <figure>
-                <img src={t1} style={{height:"auto",width:"70%"}} alt="Input image 1"/>
+                <img src={t1} style={{height:"auto",width:"70%"}} alt="Original 1"/>
                 <figcaption>(Original image 1)</figcaption>
               </figure>
               <figure>
-                <img src={p1} style={{height:"auto",width:"70%"}}/>
+                <img src={p1} style={{height:"auto",width:"70%"}} alt="output 1"/>
                 <figcaption>(Output image 1)</figcaption>
               </figure>
           </Cell>
           <Cell col={4}>
             <figure>
-                <img src={t2} style={{height:"auto",width:"60%"}} alt="Original image 1"/>
+                <img src={t2} style={{height:"auto",width:"60%"}} alt="Original 2"/>
                 <figcaption>(Original image 2)</figcaption>
             </figure>
             <figure>
-                <img src={p2} style={{height:"auto",width:"60%"}}/>
+                <img src={p2} style={{height:"auto",width:"60%"}} alt="output 2"/>
                 <figcaption>(Output image 2)</figcaption>
               </figure>
           </Cell>
           <Cell col={4}>
             <figure>
-                <img src={t3} style={{height:"auto",width:"65%"}}/>
+                <img src={t3} style={{height:"auto",width:"65%"}} alt="Original 3"/>
                 <figcaption>(Original image 3)</figcaption>
               </figure>
               <figure>
-                <img src={p3} style={{height:"auto",width:"65%"}}/>
+                <img src={p3} style={{height:"auto",width:"65%"}} alt="output 3"/>
                 <figcaption>(Output image 3)</figcaption>
               </figure>
           </Cell>

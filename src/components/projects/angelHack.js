@@ -21,7 +21,7 @@ class AngelHack extends Component {
                 <h3><strong>NodeJS | HTML/CSS | C++</strong></h3>
                 <div className="proj-img">
                   <span className="helper"></span>
-                  <img src={angelHack}/>
+                  <img src={angelHack} alt="angelHack logo"/>
                 </div>
               </div>
             </Cell>
@@ -29,7 +29,7 @@ class AngelHack extends Component {
           <Grid>
             <Cell col={12}>
               <img src={ppt} height="200px" 
-                  style={{float: 'right', margin: '0px 0px 15px 15px'}}/>
+                  style={{float: 'right', margin: '0px 0px 15px 15px'}} alt="powerpoint"/>
               <p>
                 On June 22, 2019, my team of four members participated
                 in the Ho Chi Minh Hackathon, held at Fullbright University. 
@@ -51,8 +51,8 @@ class AngelHack extends Component {
                               textAlign:'center',
                               color:'#447374'}}>
                                 
-                <img src={fb1} height="100px"/>
-                <img src={fb2} height="100px"/>
+                <img src={fb1} height="100px" alt="comment 1"/>
+                <img src={fb2} height="100px" alt="comment 2"/>
                 <figcaption style={{fontSize:"1.3em"}}>(Similar customer's questions we found)</figcaption>
               </figure>
               <p>
@@ -75,7 +75,7 @@ class AngelHack extends Component {
               </p>
               <figure style={{float: 'right', margin: '0px 0px 15px 15px',
                       textAlign:'center', fontStyle:'italic', color:'#447374'}}>
-                <img src={interface_} height="500px" />
+                <img src={interface_} height="500px" alt="interface" />
                 <figcaption style={{fontSize:"1.3em"}}>(Our solution's interface)</figcaption>
               </figure>
               <h3>Our Solution</h3>
@@ -133,7 +133,7 @@ class AngelHack extends Component {
                 </figure>
               
                 <figure>
-                  <img src={finalist}height='200px' style={{position:"relative"}}/>
+                  <img src={finalist}height='200px' style={{position:"relative"}} alt="finalist pitch"/>
                   <figcaption style={{fontSize:"1.3em"}}>(Our finalist-pitch)</figcaption>
                 </figure>
                 

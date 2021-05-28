@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, 
-        CardTitle, CardActions, Button, CardMenu, IconButton } from "react-mdl";
+import { Grid, Cell, Button } from "react-mdl";
 import throwing from '../img/hack112/throwing.gif';
 import body from '../img/hack112/body.gif';
 import team from '../img/hack112/team.JPG';
@@ -16,7 +15,7 @@ class Hack112 extends Component {
             <h3><strong>Python | PyGame | PyKinnect</strong></h3>
             <div style={{margin:"auto", width: '80%'}}>
                <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60"/>
+                <img class="ratio" src="http://placehold.it/90x60" alt="ratio placeholder"/>
                <iframe src='https://www.youtube.com/embed/sthsFyCTXCs'
                 frameBorder='0' allow='autoplay; encrypted-media'
                 allowFullScreen title='video'/>
@@ -46,7 +45,7 @@ class Hack112 extends Component {
               <figure style={{fontStyle:'italic', color:"black"}}>
                 <div className="proj-img">
                 <span className="helper"></span>
-                <img src={body} ></img>
+                <img src={body} alt="body matching"></img>
                 </div>
                 <figcaption style={{fontSize:"1.3em"}}>(Player's body matching)</figcaption>
               </figure>
@@ -58,7 +57,7 @@ class Hack112 extends Component {
               <figure style={{fontStyle:'italic',  color:"black"}}>
               <div className="proj-img">
                 <span className="helper"></span>
-                <img src={throwing}></img>
+                <img src={throwing} alt="throwing ball"></img>
                 </div>
                 <figcaption style={{fontSize:"1.3em"}}>(Throwing ball)</figcaption>
               </figure>
@@ -75,7 +74,7 @@ class Hack112 extends Component {
             </p>
             <div>
               <figure style={{textAlign:'center', fontStyle:'italic', color:'black'}}>
-                <div className="proj-img"><img src={team}></img></div>
+                <div className="proj-img"><img src={team} alt="teammates"></img></div>
                 <figcaption style={{fontSize:"1.3em"}}>
                   (From left to right: Vikram Bhat, Daniel Cohen, Jullia Tran -
                   me, and Diva Marty)
