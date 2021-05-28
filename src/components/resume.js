@@ -25,7 +25,7 @@ class Resume extends Component {
             </div>
           </Cell>
           <Cell className="res-right-col" col={8}>
-            <iframe src="https://drive.google.com/file/d/1xl28eHjLardL4qXaF_a-uBPFVU_kQdl0/preview" width="600" height="750"></iframe>
+            <iframe title="resume pdf" src="https://drive.google.com/file/d/1xl28eHjLardL4qXaF_a-uBPFVU_kQdl0/preview" width="600" height="750"></iframe>
           </Cell>
         </Grid>
       </div>
