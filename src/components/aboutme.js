@@ -10,10 +10,10 @@ class Projects extends Component {
       <div className="proj">
         <div style={{width:"80%", margin:"auto"}}>
         <Grid >
-          <Cell col={12} >
-            <div style={{display:"flex"}}>
+          <Cell col={12}>
+            <div className="proj-img">
               <span className="helper"></span>
-              <img src={coffee} style={{marginLeft:"auto", marginRight:"auto", height:"40vh", width:"auto"}} />
+              <img src={coffee}/>
             </div>
           </Cell>
         </Grid>
@@ -47,9 +47,9 @@ class Projects extends Component {
         </Grid>
         <Grid>
           <Cell col={12}>
-            <div style={{display:"flex"}}>
+          <div className="proj-img">
               <span className="helper"></span>
-              <img src={vsc} style={{marginLeft:"auto", marginRight:"auto", height:"40vh", width:"auto"}} fluid />
+              <img src={vsc}/>
             </div>
           </Cell>
         </Grid>

@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
-import { Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Grid, Cell } from 'react-mdl';
 import background from "./img/background.JPG";
-
-{/*<Cell col={4} style={{padding: "2em", 
-                                  margin:"auto", backgroundImage: `url(${background})`,
-                                  height:"350px", backgroundSize:"cover"}}>
-            </Cell>*/}
 
 class Landing extends Component {
   render() {
     return (
       <div className="landing-page">     
-        {/*<Grid className="landing-grid" style={{margin:"auto"}}>
-            <Cell offsetTablet={2} offsetDesktop={4}>
-              <div className="proj-img">
-                <img src={background} style={{maxHeight: "530px"}}/>
-              </div>
-            </Cell>
-    </Grid> style={{backgroundImage: `url(${cloud})`,
-                   backgroundRepeat: "no-repeat",
-                   backgroundSize: "cover",
-                   width: '100%', left:"0px", right:"0px", margin:"auto", textAlign:"center"}}*/}
         <Grid style={{margin:"auto"}} className="landing-grid">
           <Cell col={4}>
             <div className="proj-img">
@@ -34,7 +19,7 @@ class Landing extends Component {
               <div className="v-align">
                 <h1>I'm Jullia Tran</h1>
                 <hr/>
-                <p>Python | C | Machine Learning | HTML/CSS | React </p>
+                <p>Python | C | System Verilog | Webapps </p>
                 <h1>
                   {/* LinkedIn */}
                   <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
@@ -56,7 +41,6 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        {/*<Grid><Cell hideDesktop={true} hideTablet={true} style={{padding:'6em'}}></Cell></Grid>*/}
       </div>
     );
   }

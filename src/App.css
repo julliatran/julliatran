@@ -193,6 +193,11 @@ html, body {
   font-size: 2em;
   color: teal;
 }
+
+.proj h5 {
+  color: teal;
+}
+
 .proj p {
   font-size: 1.5em;
 }
@@ -204,8 +209,6 @@ html, body {
   color:'#447374';
 }
 
-.proj figcaption {
-}
 /*Art Portfolio*/
 .left-col {
   display: flex;

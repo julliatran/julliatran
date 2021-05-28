@@ -5,6 +5,37 @@ import cnn from './img/cnn.png';
 import spaceY from './img/spaceY.png';
 import bball from './img/bball.png';
 import webs from './img/webs/citydata.png';
+
+const CellElem = props => 
+    <Cell col={props.cellSz} offsetTablet={1}>
+      <div className="project-grid">
+        <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
+          <CardTitle style={{color: '#fff', height: '200px', 
+            background: `url(${props.titleBg}) center / cover`}}>
+          </CardTitle>
+          <CardText>
+            <h1><strong>{props.title}</strong></h1>
+            <p><strong>{props.langs}</strong></p>
+            <p>
+              { props.bullets.map((bullet) => { return <li> {bullet} </li>}) }
+            </p>
+          </CardText>
+          <CardActions border>
+          {props.githubLink &&
+            <Button colored ripple style={{textDecoration: 'none'}}
+                    href= {props.githubLink} 
+                    rel="noopener noreferrer" target='blank'>
+                      GitHub</Button>}
+            {props.detailsLink &&
+            <Button colored ripple style={{textDecoration: 'none'}}
+             href={props.detailsLink}>Learn More</Button>}
+          </CardActions>
+          <CardMenu style={{color: '#fff'}}>
+          </CardMenu>
+        </Card>
+      </div>
+    </Cell>;
+
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -12,174 +43,81 @@ class Project extends Component {
   }
 
   toggleCategories() {
-    /* COMPETITIONS */
+    // PYTHON - RubiksPaint, Webscraper 
     if(this.state.activeTab === 0) {
       return (
-        <Grid >
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <CardTitle style={{color: '#fff', height: '200px', 
-                           background: 'url(https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg) center / cover'}}></CardTitle>
-                <CardText>
-                  <h1><strong>AngelHack Vietnam 2019</strong></h1>
-                  <p><strong>NodeJS | HTML/CSS | C++</strong></p>
-                  <p>
-                    <li>Finalist/Second place in the FE Credit Challenge</li>
-                    <li>Created a software customer service solution</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}}
-                          href="https://github.com/julliatran/AngelHack2019" 
-                          rel="noopener noreferrer" target='blank'>
-                            GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}}
-                          href="angelHack">Learn More</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <img src={bball} height='200px'/>
-                <CardText>
-                <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
-                <p><strong>Python | PyGame | PyKinnect</strong></p>
-                  <p>
-                    <li>Won "Most Ambitious Project"</li>
-                    <li>Top 8 out of around 50 teams</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="https://github.com/julliatran/BasketballSimulator"
-                          rel="noopener noreferrer"
-                          target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="/hack112">Learn More</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
+        <Grid>
+          {/* TODO: change this content */}
+          <CellElem cellSz = "4"
+                    titleBg="https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png"
+                    title ="Ray Tracer"
+                    langs = "C++ | Computer Graphics"
+                    bullets={["Implemented a modern package for 3D modeling, rendering, and animation similar to 3D tools Maya and Blender", "Developed an efficient implementation of ray-scene geometry queries with multi-bounce light and environmental light support"]}
+                    detailsLink="raytrace"
+                    />
+          <CellElem cellSz = "4"
+                    titleBg={RB}
+                    title ="Rubiks Paint"
+                    langs = "Python | Panda3D | NumPy | SciPy"
+                    bullets={["One of 10 projects that got chosen out of around 500 projects", "Showcased at Carnegie Mellon University 15-112 Fall 2018 class"]}
+                    githubLink="https://github.com/julliatran/rubikspaint"
+                    detailsLink="rubiksPaint"
+                    />
+          <CellElem cellSz = "4"
+                    titleBg={webs}
+                    title ="Webscraper"
+                    langs = "Python | BeautifulSoup4 | Pandas | JupyterNB"
+                    bullets={["Webscrapes through city-data.com to collect data from almost 7000 cities in the US"]}
+                    githubLink="https://github.com/julliatran/webscrapper/tree/master/Webscrapper"
+                    detailsLink="webscraper"
+                    />
+
         </Grid>
-      )  
-    } // MACHINE LEARNING
+      )}
+    /* COMPETITIONS */
     else if(this.state.activeTab === 1) {
       return (
-        <Grid>
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
-                <CardTitle style={{color: '#fff', height: '200px',
-                           background: 'url(https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png) center / cover'}} ></CardTitle>
-                <CardText>
-                  <h1><strong>VGG16 AutoEncoder</strong></h1>
-                  <p>
-                    <li>Implemented and Tested using Keras</li>
-                    <li>Used pretrained VGG16 model and built a decoder
-                        to test on eddy currents dataset for feature extractions</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple
-                          href="https://github.com/julliatran/autoencoders/blob/master/vgg16.ipynb"
-                          rel="noopener noreferrer"
-                          target='blank'>GitHub</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <img src={cnn} height='200px'/>
-                <CardText>
-                  <h1><strong>CNN AutoEncoder</strong></h1>
-                  <p>
-                    <li>Implemented and Tested using Keras</li>
-                    <li>Built the model to test on eddy currents dataset 
-                        for feature extractions</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple 
-                          href="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
-                          rel="noopener noreferrer"
-                          target='blank'>GitHub</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
-        </Grid>
-      )
-    } // PYTHON - RubiksPaint, Webscraper 
+        <Grid >
+          <CellElem cellSz = "6"
+                    titleBg="https://cdn-az.allevents.in/banners/f0db8970-8e2e-11e9-8097-7f22a079d7fe-rimg-w526-h295-gmir.jpg" 
+                    title ="AngelHack Vietnam 2019"
+                    langs="NodeJS | HTML/CSS | C++"
+                    bullets={["Finalist/Second place in the FE Credit Challenge", "Created a software customer service solution"]}
+                    githubLink="https://github.com/julliatran/AngelHack2019"
+                    detailsLink="angelHack"/>
+          <CellElem cellSz = "6"
+                    titleBg={bball} 
+                    title ="Hack 112 - Basketball Simulator"
+                    langs="Python | PyGame | PyKinnect"
+                    bullets={["Won 'Most Ambitious Project'", "Top 8 out of around 50 teams"]}
+                    githubLink="https://github.com/julliatran/BasketballSimulator"
+                    detailsLink="hack112"/>
+        
+        </Grid>                  
+      )}
+    // MACHINE LEARNING
     else if(this.state.activeTab === 2) {
       return (
-        <Grid>
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto', borderRadius: "10px"}}>
-                <img src={RB} height='200px'/>
-                <CardText>
-                <h1><strong>Rubiks Paint</strong></h1>
-                <p><strong>Python | Panda3D | NumPy | SciPy</strong></p>
-                  <p>
-                    <li>One of 10 projects that got chosen out of around 500 
-                        projects</li>
-                    <li>Showcased at Carnegie Mellon University 15-112 class</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="https://github.com/julliatran/rubikspaint" 
-                          rel="noopener noreferrer" target='blank'>GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="/rubiksPaint">Learn More</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
-          
-          <Cell col={6} offsetTablet={1}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <img src={webs} height='200px'/>
-                <CardText>
-                  <h1><strong>Webscraper</strong></h1>
-                  <p><strong>Python | BeautifulSoup4 | Pandas | JupyterNB</strong></p>
-                  <p>
-                    <li>Webscrapes through city-data.com to collect data from 
-                        almost 7000 cities in the US</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple rel="noopener noreferrer" target='blank'
-                          href="https://github.com/julliatran/webscrapper/tree/master/Webscrapper">GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}} 
-                          href="/webscraper">Learn More</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
+        <Grid >
+          <CellElem cellSz = "6"
+                    titleBg="https://miro.medium.com/max/1210/1*E7zhhan7Sp7hats4jkKdeA.png"
+                    title ="VGG16 AutoEncoder"
+                    bullets={["Implemented and tested using Keras", "Used pretrained VGG16 model and built a decoder to test on eddy currents dataset for feature extractions"]}
+                    githubLink="https://github.com/julliatran/autoencoders/blob/master/vgg16.ipynb"
+                    />
+          <CellElem cellSz = "6"
+                    titleBg={cnn}
+                    title ="CNN AutoEncoder"
+                    bullets={["Implemented and tested using Keras", "Built the model to test on eddy currents dataset for feature extractions"]}
+                    githubLink="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
+                    />
         </Grid>
-      )
-    } // Hardware
+      )}
+    
+    // Hardware
     else if(this.state.activeTab === 3) {
       return (
+        
         <Grid>
           <Cell col={12}>
             <div className="project-grid">
@@ -214,9 +152,9 @@ class Project extends Component {
       <div className="category-tabs">
         <Tabs style ={{background:"white", paddingLeft:"6%"}} activeTab={this.state.activeTab} 
                onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>Competitions</Tab>
-          <Tab>Machine Learning</Tab>
-          <Tab>Python</Tab>
+          <Tab>.py/C++</Tab>
+          <Tab>Hacks</Tab>
+          <Tab>ML</Tab>
           <Tab>Hardware</Tab>
         </Tabs>  
         <div className="content">{this.toggleCategories()}</div>
