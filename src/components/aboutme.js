@@ -12,14 +12,14 @@ class Projects extends Component {
           <Cell col={12}>
             <div className="proj-img">
               <span className="helper"></span>
-              <img src={coffee} alt="profile"/>
+              <img src={coffee}  style={{width:"80%", maxWidth:"400px"}} max alt="profile"/>
             </div>
           </Cell>
         </Grid>
         <Grid className="landing-grid">
           <Cell col={12}>
             <h1><strong>Hello! I'm Jullia Tran.</strong></h1>
-            <p>I'm from Ho Chi Minh City, Vietnam, and I'm currently a sophomore
+            <p>I'm from Ho Chi Minh City, Vietnam, and I'm currently a rising senior
               at Carnegie Mellon University studying Electrical and Computer
               Engineering. For highschool, I went to Holderness School. 
             </p>

@@ -25,10 +25,7 @@ class Resume extends Component {
             </div>
           </Cell>
           <Cell className="res-right-col" col={8}>
-              <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/17x22" alt="iframe placeholder"/>
-                <iframe title="Resume pdf" src="https://drive.google.com/file/d/18EOR70T0fWN2e8UnoS7bZXZfuofxZ7db/preview" width="auto" height="100%"></iframe>
-            </div>
+            <iframe src="https://drive.google.com/file/d/1xl28eHjLardL4qXaF_a-uBPFVU_kQdl0/preview" width="600" height="750"></iframe>
           </Cell>
         </Grid>
       </div>
