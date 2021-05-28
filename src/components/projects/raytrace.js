@@ -30,12 +30,9 @@ class Webscraper extends Component {
             <h1><strong>Scotty3d</strong></h1>
             <h3>Computer Graphics | C++</h3>
             <div style={{margin:"auto", width: '70vw', maxWidth: '800px'}}>
-              <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60" alt="ratio placeholder"/>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/GRJPh_abWNg" 
                 title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
             </div>
           </Cell>
         </Grid>

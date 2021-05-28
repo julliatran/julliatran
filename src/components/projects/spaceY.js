@@ -12,15 +12,11 @@ class SpaceY extends Component {
             <h1><strong>SpaceY</strong></h1>
             <h3>Photon Particle IO | PIR Sensor | HTML </h3>
             <div style={{margin:"auto", width: '70%'}}>
-               {/* <Video videoId='sthsFyCTXCs'/> */}
-               <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60" alt="ratio for iframe"/>
-               <iframe src='https://www.youtube.com/embed/F77k1sSP7SM'
-                frameBorder='0' allow='autoplay; encrypted-media'
-                allowFullScreen title='video'/>
-                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F77k1sSP7SM" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div style={{paddingTop:'1em'}} className="proj-img">
+            <div style={{paddingTop:'1em', maxWidth:"1000px"}} className="proj-img">
                 <img src = { poster } alt="poster"/></div>
           </Cell>
         </Grid>

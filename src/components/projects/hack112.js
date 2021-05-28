@@ -14,12 +14,9 @@ class Hack112 extends Component {
             <h1><strong>Hack 112 - Basketball Simulator</strong></h1>
             <h3><strong>Python | PyGame | PyKinnect</strong></h3>
             <div style={{margin:"auto", width: '80%'}}>
-               <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60" alt="ratio placeholder"/>
-               <iframe src='https://www.youtube.com/embed/sthsFyCTXCs'
-                frameBorder='0' allow='autoplay; encrypted-media'
-                allowFullScreen title='video'/>
-                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sthsFyCTXCs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </Cell>
         </Grid>

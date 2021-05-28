@@ -11,7 +11,7 @@ class Webscraper extends Component {
             <h1><strong>Webscraper</strong></h1>
             <h3>Python | BeautifulSoup4 | Pandas | JupyterNB</h3>
             <div className="proj-img">
-              <img style ={{alignItems:"center"}} src={webs} alt="web"/>
+              <img style ={{alignItems:"center", maxWidth:"600px"}} src={webs} alt="web"/>
             </div>
           </Cell>
         </Grid>

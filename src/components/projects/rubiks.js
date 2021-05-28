@@ -19,24 +19,18 @@ class Rubiks extends Component {
             <h1><strong>Rubiks Paint</strong></h1>
             <h3><strong>Python | Panda3D | NumPy | SciPy</strong></h3>
             <div style={{margin:"auto", width: '70vw'}}>
-              <div className="res-hiframe">
-                <img class="ratio" src="http://placehold.it/90x60" alt="ratio placeholder"/>
-                <iframe src='https://www.youtube.com/embed/WErlUYfhH-k'
-                 frameBorder='0' allow='autoplay; encrypted-media'
-                 allowFullScreen title='video'/>
-              </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WErlUYfhH-k" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </Cell>
         </Grid>
         <Grid>
-          <Cell col={4} style={{justifyContent: "center"}}>
+          <Cell col={4} style={{justifyContent: "center", textAlign:'center'}}>
             <div style={{margin:"auto", height: '40%'}}>
-              <div className="res-hiframe" style={{top:"70%"}}>
-                <img class="ratio" alt="ratio placeholder" src="http://placehold.it/90x60"/>
-                <iframe src='https://www.youtube.com/embed/oApRG1qsmDA'
-                 frameBorder='0' allow='autoplay; encrypted-media'
-                 allowFullScreen title='video'/>
-              </div>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/oApRG1qsmDA"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             </Cell>
             <Cell col={8}>
