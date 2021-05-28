@@ -6,6 +6,7 @@ import spaceY from './img/spaceY.png';
 import bball from './img/bball.png';
 import webs from './img/webs/citydata.png';
 import dragon from './img/rt/dragon.png';
+import duck from './img/holoPyramid/duck.png';
 
 const CellElem = props => 
     <Cell col={props.cellSz} offsetTablet={1}>
@@ -22,14 +23,14 @@ const CellElem = props =>
             </p>
           </CardText>
           <CardActions border>
-          {props.githubLink &&
+            {props.detailsLink &&
+            <Button colored ripple style={{textDecoration: 'none'}}
+             href={props.detailsLink}>Learn More</Button>}
+            {props.githubLink &&
             <Button colored ripple style={{textDecoration: 'none'}}
                     href= {props.githubLink} 
                     rel="noopener noreferrer" target='blank'>
                       GitHub</Button>}
-            {props.detailsLink &&
-            <Button colored ripple style={{textDecoration: 'none'}}
-             href={props.detailsLink}>Learn More</Button>}
           </CardActions>
           <CardMenu style={{color: '#fff'}}>
           </CardMenu>
@@ -51,8 +52,8 @@ class Project extends Component {
           {/* TODO: change this content */}
           <CellElem cellSz = "4"
                     titleBg={dragon}
-                    title ="Ray Tracer"
-                    langs = "C++ | Computer Graphics"
+                    title ="Scotty3d"
+                    langs = "C++ | Computer Graphics | Ray Tracer"
                     bullets={["Implemented a modern package for 3D modeling, rendering, and animation similar to 3D tools Maya and Blender", "Developed an efficient implementation of ray-scene geometry queries with multi-bounce light and environmental light support"]}
                     detailsLink="raytrace"
                     />
@@ -78,31 +79,24 @@ class Project extends Component {
     // Hardware
     else if(this.state.activeTab === 1) {
       return (
-        
-        <Grid>
-          <Cell col={12}>
-            <div className="project-grid">
-              <Card shadow={5} style={{width: '500px', margin: 'auto',  borderRadius: "10px"}}>
-                <img src={spaceY} height='200px' alt="spaceY"/>
-                <CardText>
-                  <h1><strong>SpaceY</strong></h1>
-                  <p><strong>Photon Particle IO | PIR Sensor | HTML</strong></p>
-                  <p>
-                    <li>Participated in the Meeting of the 
-                        Minds at CMU in May 2019</li>
-                  </p>
-                </CardText>
-                <CardActions border>
-                  <Button colored ripple rel="noopener noreferrer" target='blank'
-                          href="https://github.com/julliatran/spaceY">GitHub</Button>
-                  <Button colored ripple style={{textDecoration: 'none'}}
-                          href="/spaceY">Learn More</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                </CardMenu>
-              </Card>
-            </div>
-          </Cell>
+        <Grid >
+          <CellElem cellSz = "6"
+                    titleBg={duck} 
+                    title ="HoloPyramid - Capstone"
+                    langs="SystemVerilog | FPGA | Real-time Video Feed"
+                    bullets={["Illusion of a hologram real-time video feed using FPGA",
+                              "Provide an immersive presentation tool to enlarge an object for easier viewing by a group of people",
+                              "Real-time latency: 16 frames @240fps (~67ms)",
+                              "Enlargement ~4-5x"]}
+                    githubLink="https://github.com/julliatran/c4HoloPyramid"
+                    detailsLink="holoPyramid"/>
+          <CellElem cellSz = "6"
+                    titleBg={spaceY}
+                    title ="SpaceY"
+                    langs="Photon Particle IO | PIR Sensor | HTML"
+                    bullets={["Participated in the Meeting of the Minds at CMU in May 2019"]}
+                    githubLink="https://github.com/julliatran/spaceY"
+                    detailsLink="spaceY"/>
         </Grid>
       )
     }
@@ -144,9 +138,8 @@ class Project extends Component {
                     githubLink="https://github.com/julliatran/autoencoders/blob/master/cnn.ipynb"
                     />
         </Grid>
-      )}
-    
-    
+      )
+    }
   }
 
   render() {

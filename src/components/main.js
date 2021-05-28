@@ -12,6 +12,7 @@ import Hack112 from './projects/hack112';
 import SpaceY from './projects/spaceY';
 import Webscraper from './projects/webscraper';
 import RayTrace from './projects/raytrace';
+import HoloPyramid from './projects/holoPyramid';
 const Main = () => {
   return (
   <Switch>
@@ -26,6 +27,7 @@ const Main = () => {
     <Route exact path="/spaceY" component={ SpaceY }></Route>
     <Route exact path="/webscraper" component={ Webscraper }></Route>
     <Route exact path="/raytrace" component={ RayTrace }></Route>
+    <Route exact path="/holoPyramid" component={ HoloPyramid }></Route>
   </Switch>
   ); 
 }
