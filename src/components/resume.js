@@ -26,7 +26,7 @@ class Resume extends Component {
           </Cell>
           <Cell className="res-right-col" col={8}>
             {/* 1. Go to Drive -> Click "..." top right -> "Open in new Window" -> "..." -> "Embed Item" -> Copy the id and replace it between &srcid=.*&hl */}
-            <iframe title="resume pdf" src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1O3ez2fyFntshOdRFq0ahSd1NFe8K_7oP&hl=en&embedded=true" width="100%" height="750px"></iframe>
+            <iframe title="resume pdf" src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1Bj6FzT10o3vi_Ru0oQk2joSSSP3ZT_nR&hl=en&embedded=true" width="100%" height="750px"></iframe>
           </Cell>
         </Grid>
       </div>
