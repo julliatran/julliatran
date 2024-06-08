@@ -19,28 +19,19 @@ class Projects extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <h1><strong>Hello! I'm Jullia Tran.</strong></h1>
-            <p>I'm from Ho Chi Minh City, Vietnam, and I'm currently a rising senior
-              at Carnegie Mellon University studying Electrical and Computer
-              Engineering. For highschool, I went to Holderness School. 
+            <p>I grew up in Ho Chi Minh City, Vietnam and went to high school and college in the United States.
             </p>
-            <p>My interests include computers, graphics, and visual arts. In my
+            <p>My interests include technology and visual arts. In my
               free time, I enjoy traveling, rock climbing, playing squash, and eating.</p>
-            <h3>Why this website was built</h3>
-            <p>I wanted to create a space in which I can better explain and 
-               document my growth as a student as my career progresses. I also 
-               just want to have a website to display my artworks that I worked 
-               on throughout the year because otherwise, they are just left stashed
-               away in my home.
+            <h3>Why was this website built?</h3>
+            <p>I wanted to create a space where I can better explain some of the projects
+               I've worked on. I also want to display some of my artworks.
             </p>
-            <h3>How this website was built</h3>
+            <h3>How was this website built?</h3>
             <p>I built this website using React. The main library I used for the
               interface is react-mdl. I used react-router-dom for routing between
               pages. For my art portfolio, I used react-grid-gallery for the grid
               layout.
-            </p>
-            <p>I used Visual Studio Code to write this website. I usually use Sublime
-              to code but I soon realized that navigating between files was quite
-              difficult in Sublime.
             </p>
           </Cell>
         </Grid>

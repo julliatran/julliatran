@@ -19,7 +19,7 @@ class Landing extends Component {
               <div className="v-align">
                 <h1>I'm Jullia Tran</h1>
                 <hr/>
-                <p>Python | C | System Verilog | Webapps </p>
+                <p>Python | System Verilog | Webapps </p>
                 <h1>
                   {/* LinkedIn */}
                   <a href="https://www.linkedin.com/in/jullia-tran-896922184/" 
